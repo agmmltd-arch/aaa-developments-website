@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { WhatsAppIcon } from '@/components/whatsapp-icon';
 import { Shell } from '@/components/site';
 import QuoteForm from '@/components/quote-form';
 import {
@@ -37,7 +38,7 @@ export default function Contact() {
             {phone}
           </Link>
           <Link className="contact-line" href={whatsapp}>
-            Message on WhatsApp ↗
+            <WhatsAppIcon /> Message on WhatsApp
           </Link>
           <Link className="contact-line" href={'mailto:' + email}>
             {email}

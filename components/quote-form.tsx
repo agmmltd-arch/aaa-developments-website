@@ -1,7 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ClipboardList } from 'lucide-react';
+import { WhatsAppIcon } from './whatsapp-icon';
 import { Slider } from '@/components/ui/slider';
 import {
   Select,
@@ -168,7 +169,7 @@ export default function QuoteForm() {
           </p>
         )}
         <button type="submit" className="button blue quote-submit">
-          Get a Free Quote <ArrowRight size={18} />
+          Get a Free Quote <ClipboardList size={18} />
         </button>
         <small className="form-note">
           Next, choose WhatsApp or email to send your enquiry.
@@ -191,7 +192,7 @@ export default function QuoteForm() {
             target="_blank"
             rel="noreferrer"
           >
-            Send with WhatsApp ↗
+            <WhatsAppIcon /> Send with WhatsApp
           </Link>
           <Link
             className="button outline"

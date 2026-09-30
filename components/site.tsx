@@ -1,9 +1,10 @@
 /* eslint-disable nextjs/no-img-element -- User photographs are served as original static assets. */
 import Link from 'next/link';
+import { WhatsAppIcon } from './whatsapp-icon';
 import {
   ArrowUpRight,
   Phone,
-  MessageCircle,
+  ClipboardList,
   ArrowRight,
   Star,
 } from 'lucide-react';
@@ -80,7 +81,7 @@ export function Header() {
             {phone}
           </Link>
           <Link href="/contact" className="button outline small">
-            Get a Free Quote
+            <ClipboardList size={16} /> Get a Free Quote
           </Link>
         </div>
         <details className="mobile-menu">
@@ -109,7 +110,7 @@ export function Actions({ quote = false }: { quote?: boolean }) {
         Call {phone}
       </Link>
       <Link href={quote ? '/contact' : whatsapp} className="button outline">
-        {quote ? <ArrowUpRight size={18} /> : <MessageCircle size={18} />}{' '}
+        {quote ? <ClipboardList size={18} /> : <WhatsAppIcon size={18} />}{' '}
         {quote ? 'Get a Free Quote' : 'Message on WhatsApp'}
       </Link>
     </div>
@@ -188,11 +189,11 @@ export function Footer() {
           <span>Call now</span>
         </Link>
         <Link href={whatsapp}>
-          <MessageCircle size={18} />
+          <WhatsAppIcon size={18} />
           <span>WhatsApp</span>
         </Link>
         <Link href="/contact">
-          <ArrowUpRight size={18} />
+          <ClipboardList size={18} />
           <span>Free quote</span>
         </Link>
       </nav>
@@ -285,7 +286,6 @@ export function ReviewSection({
           <Link href={bark} target="_blank" rel="noreferrer">
             More reviews on Bark ↗
           </Link>
-          <small>Ratings checked September 2026</small>
         </div>
       </div>
       <div className="review-grid">
@@ -294,17 +294,8 @@ export function ReviewSection({
           return (
             <article key={id} className="review">
               <div className="review-person">
-                <span className="review-avatar" aria-hidden="true">
-                  {r.name
-                    .split(' ')
-                    .slice(0, 2)
-                    .map((n) => n[0])
-                    .join('')
-                    .replace(',', '')}
-                </span>
                 <div>
                   <strong>{r.name}</strong>
-                  <span>{r.date}</span>
                 </div>
                 <span className="source-tag">
                   {r.sourceName || 'Google via Bark'}
@@ -314,11 +305,10 @@ export function ReviewSection({
                 <Stars />
               )}
               <span className="review-topic">{r.topic}</span>
-              <p>{r.quote ? <>“{r.quote}”</> : r.summary}</p>
+              <p>“{r.quote}”</p>
               <Link href={r.source || bark} target="_blank" rel="noreferrer">
-                {r.sourceName || 'Google review via Bark'} ↗
+                Read full review on {r.sourceName || 'Bark'}
               </Link>
-              <small>{r.quote ? 'Review excerpt' : 'Review summary'}</small>
             </article>
           );
         })}

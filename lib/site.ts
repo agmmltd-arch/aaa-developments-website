@@ -97,8 +97,7 @@ export type Review = {
   name: string;
   date: string;
   topic: string;
-  summary: string;
-  quote?: string;
+  quote: string;
   source?: string;
   sourceName?: string;
 };
@@ -108,129 +107,113 @@ export const reviews: Review[] = [
     name: 'Ali, Burnley',
     date: '19 December 2025',
     topic: 'Pitched roof leak repair',
-    summary:
-      'Ali describes an efficient roof repair agreed and completed within a few days.',
-    quote: 'The whole process was very efficient and professional.',
     source: mybuilder,
     sourceName: 'MyBuilder',
+    quote: 'very efficient and professional.',
   },
   {
     id: 'carl',
     name: 'Carl, Burnley',
     date: '30 May 2025',
     topic: 'Leaking gutters',
-    summary:
-      'Carl reports that Kelvin responded quickly and repaired leaking gutters on the same day.',
-    quote: 'Very professional. Would definitely use again. Nice guy too.',
     source: mybuilder,
     sourceName: 'MyBuilder',
+    quote: 'Would definitely use again.',
   },
   {
     id: 'lucy',
     name: 'Lucy Higham, Chorley',
     date: '6 January 2025',
     topic: 'Leaking chimney',
-    summary:
-      'Lucy praises the clear quote, punctual team and photographs sent after the chimney work.',
-    quote: 'Communication was great from the start',
     source: mybuilder,
     sourceName: 'MyBuilder',
+    quote: 'Communication was great from the start',
   },
   {
     id: 'emma',
     name: 'Emma, Accrington',
     date: '28 August 2024',
     topic: 'Roofing & guttering',
-    summary:
-      'Emma describes repeat work on rental properties, with reliable communication and photographs before and after repairs.',
     source: mybuilder,
     sourceName: 'MyBuilder',
+    quote: 'extremely reliable',
   },
   {
     id: 'charlotte',
     name: 'Charlotte, Burnley',
     date: '1 September 2024',
     topic: 'Loose roof tile',
-    summary:
-      'Charlotte says AAA fixed loose tiles and also cleared and repaired the guttering.',
     source: mybuilder,
     sourceName: 'MyBuilder',
+    quote: 'Fab job, thanks again!',
   },
   {
     id: 'jim',
     name: 'Jim, Accrington',
     date: '19 May 2025',
     topic: 'Roof vent enquiry',
-    summary:
-      'Jim praises the communication, prompt visit and straightforward approach to the job.',
     source: mybuilder,
     sourceName: 'MyBuilder',
+    quote: 'Kept in contact',
   },
   {
     id: 'maxine',
     name: 'Maxine Garrett',
     date: '19 January 2026',
     topic: 'Roof repairs',
-    summary:
-      'Maxine describes a prompt leak repair, with photographs explaining the problem and a tidy finish.',
+    quote: 'Clean, tidy, reliable and honest.',
   },
   {
     id: 'nigel',
     name: 'Nigel Hegarty',
     date: '12 July 2026',
     topic: 'Reroofing',
-    summary:
-      'Nigel chose AAA after comparing roofers and praises the speed, workmanship and competitive quote.',
+    quote: 'work was excellent and fast',
   },
   {
     id: 'jamie',
     name: 'Jamie Loxton',
     date: '20 May 2026',
     topic: 'Guttering',
-    summary:
-      'Jamie reports a quick response to leaking gutters, clear advice and a clean site afterwards.',
     source: google,
     sourceName: 'Google',
+    quote: 'without trying to upsell me on unnecessary work.',
   },
   {
     id: 'phoenix',
     name: 'Phoenix Walton',
     date: '16 May 2026',
     topic: 'Roofing & plastering',
-    summary:
-      'Phoenix describes repeat roofing and plastering work, with clear explanations and consistently good results.',
     source: google,
     sourceName: 'Google',
+    quote: 'he was polite, well-mannered, and professional.',
   },
   {
     id: 'caroline',
     name: 'Caroline Connoll',
     date: '14 July 2025',
     topic: 'Roofing, plastering & rendering',
-    summary:
-      'Caroline recommends Kelvin following years of roofing, plastering and rendering work for her family.',
+    quote: 'very professional',
   },
   {
     id: 'liz',
     name: 'Liz Wilson',
     date: '12 November 2025',
     topic: 'Flat roofing',
-    summary:
-      'Liz says an EPDM repair stopped her garden cabin roof leaking through subsequent stormy weather.',
+    quote: 'Lads did a great job.',
   },
   {
     id: 'barbara',
     name: 'Barbara Ball',
     date: '11 May 2026',
     topic: 'Leadwork',
-    summary:
-      'Barbara praises the response and lead flashing work around her bay window.',
+    quote: 'fantastic job',
   },
   {
     id: 'rebecca',
     name: 'Rebecca Johnson',
     date: '21 May 2026',
     topic: 'Customer service',
-    summary: 'Rebecca recommends AAA for customer service and workmanship.',
+    quote: 'great customer service and quality workmanship',
   },
 ];
