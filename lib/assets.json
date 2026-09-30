@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "src": "/images/01-finished-grey-tiled-roof.png",
+    "category": "roofing",
+    "alt": "Finished grey tiled roof and hip detail",
+    "sourceFile": "Screenshot 2026-09-30 at 18.09.50.png",
+    "bytes": 1576233,
+    "similarGroup": "roof-view-01"
+  },
+  {
+    "id": 2,
+    "src": "/images/02-flat-roof-finish.png",
+    "category": "flat-roofing",
+    "alt": "Dark flat roof surface beside a brick wall",
+    "sourceFile": "Screenshot 2026-09-30 at 18.10.19.png",
+    "bytes": 2208760,
+    "similarGroup": null
+  },
+  {
+    "id": 3,
+    "src": "/images/03-tiled-roof-hip.png",
+    "category": "roofing",
+    "alt": "Grey roof tiles and a finished hip line",
+    "sourceFile": "Screenshot 2026-09-30 at 18.10.30.png",
+    "bytes": 2110100,
+    "similarGroup": null
+  },
+  {
+    "id": 4,
+    "src": "/images/04-kelvin-and-van.png",
+    "category": "people",
+    "alt": "Kelvin standing in front of the AAA Developments van",
+    "sourceFile": "Screenshot 2026-09-30 at 18.10.56.png",
+    "bytes": 1510443,
+    "similarGroup": null
+  },
+  {
+    "id": 5,
+    "src": "/images/05-rendered-house-scaffold.png",
+    "category": "rendering",
+    "alt": "Cream rendered house with scaffolding in place",
+    "sourceFile": "Screenshot 2026-09-30 at 18.11.33.png",
+    "bytes": 2170665,
+    "similarGroup": null
+  },
+  {
+    "id": 6,
+    "src": "/images/06-roof-membrane-battens.png",
+    "category": "roofing",
+    "alt": "Roof membrane and timber battens during installation",
+    "sourceFile": "Screenshot 2026-09-30 at 18.11.45.png",
+    "bytes": 1800044,
+    "similarGroup": null
+  },
+  {
+    "id": 7,
+    "src": "/images/07-jetwashing-paving.png",
+    "category": "jetwashing",
+    "alt": "Pressure washer cleaning a paved surface",
+    "sourceFile": "Screenshot 2026-09-30 at 18.11.58.png",
+    "bytes": 1700768,
+    "similarGroup": null
+  },
+  {
+    "id": 8,
+    "src": "/images/08-flat-and-pitched-roof.png",
+    "category": "flat-roofing",
+    "alt": "Flat roof meeting grey pitched roof tiles",
+    "sourceFile": "Screenshot 2026-09-30 at 18.12.14.png",
+    "bytes": 1699982,
+    "similarGroup": null
+  },
+  {
+    "id": 9,
+    "src": "/images/09-terrace-tile-roof.png",
+    "category": "roofing",
+    "alt": "Red tiled roof on a terraced house",
+    "sourceFile": "Screenshot 2026-09-30 at 18.12.37.png",
+    "bytes": 2128108,
+    "similarGroup": null
+  },
+  {
+    "id": 10,
+    "src": "/images/10-rendered-front-door.png",
+    "category": "rendering",
+    "alt": "Cream render around a front door and windows",
+    "sourceFile": "Screenshot 2026-09-30 at 18.12.48.png",
+    "bytes": 1024036,
+    "similarGroup": null
+  },
+  {
+    "id": 11,
+    "src": "/images/11-flat-roof-membrane.png",
+    "category": "flat-roofing",
+    "alt": "Flat roof membrane and flashing against brickwork",
+    "sourceFile": "Screenshot 2026-09-30 at 18.12.56.png",
+    "bytes": 1433261,
+    "similarGroup": null
+  },
+  {
+    "id": 12,
+    "src": "/images/12-grey-roof-valley.png",
+    "category": "roofing",
+    "alt": "Finished grey tiled roof with hip and valley",
+    "sourceFile": "Screenshot 2026-09-30 at 18.13.08.png",
+    "bytes": 1783431,
+    "similarGroup": null
+  },
+  {
+    "id": 13,
+    "src": "/images/13-rendering-finishing-work.png",
+    "category": "rendering",
+    "alt": "Exterior render finishing with scaffolding alongside",
+    "sourceFile": "Screenshot 2026-09-30 at 18.13.15.png",
+    "bytes": 1841763,
+    "similarGroup": null
+  },
+  {
+    "id": 14,
+    "src": "/images/14-aaa-van-rear.png",
+    "category": "people",
+    "alt": "Rear of the branded AAA Developments van",
+    "sourceFile": "Screenshot 2026-09-30 at 18.13.27.png",
+    "bytes": 1912489,
+    "similarGroup": null
+  },
+  {
+    "id": 15,
+    "src": "/images/15-dormer-flat-roof.png",
+    "category": "flat-roofing",
+    "alt": "Flat roof above white dormer cladding",
+    "sourceFile": "Screenshot 2026-09-30 at 18.13.42.png",
+    "bytes": 1281571,
+    "similarGroup": null
+  },
+  {
+    "id": 16,
+    "src": "/images/16-roofing-work-in-progress.png",
+    "category": "roofing",
+    "alt": "Roofer working where a flat roof meets pitched tiles",
+    "sourceFile": "Screenshot 2026-09-30 at 18.14.05.png",
+    "bytes": 2270121,
+    "similarGroup": null
+  },
+  {
+    "id": 17,
+    "src": "/images/17-slate-roof-window.png",
+    "category": "roofing",
+    "alt": "Roof window set within a slate roof",
+    "sourceFile": "Screenshot 2026-09-30 at 18.14.25.png",
+    "bytes": 1702201,
+    "similarGroup": null
+  },
+  {
+    "id": 18,
+    "src": "/images/18-masonry-preparation.png",
+    "category": "masonry",
+    "alt": "Tradesperson preparing exterior brickwork",
+    "sourceFile": "Screenshot 2026-09-30 at 18.14.46.png",
+    "bytes": 2240145,
+    "similarGroup": null
+  },
+  {
+    "id": 19,
+    "src": "/images/19-rendered-side-elevation.png",
+    "category": "rendering",
+    "alt": "Finished render on the side of a house",
+    "sourceFile": "Screenshot 2026-09-30 at 18.14.57.png",
+    "bytes": 1130915,
+    "similarGroup": null
+  },
+  {
+    "id": 20,
+    "src": "/images/20-slate-roof-ridge.png",
+    "category": "roofing",
+    "alt": "Traditional slate roof with ridge tiles",
+    "sourceFile": "Screenshot 2026-09-30 at 18.15.16.png",
+    "bytes": 1874900,
+    "similarGroup": null
+  },
+  {
+    "id": 21,
+    "src": "/images/21-render-corner-detail.png",
+    "category": "rendering",
+    "alt": "Textured render at an external corner",
+    "sourceFile": "Screenshot 2026-09-30 at 18.15.26.png",
+    "bytes": 2032181,
+    "similarGroup": null
+  },
+  {
+    "id": 22,
+    "src": "/images/22-paved-courtyard.png",
+    "category": "jetwashing",
+    "alt": "Paved courtyard with blue garden furniture",
+    "sourceFile": "Screenshot 2026-09-30 at 18.15.51.png",
+    "bytes": 1992286,
+    "similarGroup": null
+  },
+  {
+    "id": 23,
+    "src": "/images/23-render-window-detail.png",
+    "category": "rendering",
+    "alt": "Exterior render and window reveals beneath scaffolding",
+    "sourceFile": "Screenshot 2026-09-30 at 18.16.03.png",
+    "bytes": 2075215,
+    "similarGroup": null
+  },
+  {
+    "id": 24,
+    "src": "/images/24-red-tiled-bungalow.png",
+    "category": "roofing",
+    "alt": "Red tiled bungalow roof with a roofer at the ridge",
+    "sourceFile": "Screenshot 2026-09-30 at 18.16.12.png",
+    "bytes": 1966412,
+    "similarGroup": null
+  },
+  {
+    "id": 25,
+    "src": "/images/25-aaa-customer-photo-one.png",
+    "category": "people",
+    "alt": "AAA team member pictured with a customer",
+    "sourceFile": "Screenshot 2026-09-30 at 18.16.31.png",
+    "bytes": 2233659,
+    "similarGroup": null
+  },
+  {
+    "id": 26,
+    "src": "/images/26-roof-chimney-junction.png",
+    "category": "roofing",
+    "alt": "Roof tiles and flashing beside a chimney",
+    "sourceFile": "Screenshot 2026-09-30 at 18.16.38.png",
+    "bytes": 2015200,
+    "similarGroup": null
+  },
+  {
+    "id": 27,
+    "src": "/images/27-finished-grey-roof-second-view.png",
+    "category": "roofing",
+    "alt": "Finished grey tiled roof viewed along the eaves",
+    "sourceFile": "Screenshot 2026-09-30 at 18.16.48.png",
+    "bytes": 1576284,
+    "similarGroup": "roof-view-01"
+  },
+  {
+    "id": 28,
+    "src": "/images/28-extension-flat-roof.png",
+    "category": "flat-roofing",
+    "alt": "Flat roof on a rear extension",
+    "sourceFile": "Screenshot 2026-09-30 at 18.17.02.png",
+    "bytes": 1704879,
+    "similarGroup": null
+  },
+  {
+    "id": 29,
+    "src": "/images/29-grey-roof-scaffold.png",
+    "category": "roofing",
+    "alt": "Grey tiled roof seen from the scaffolding",
+    "sourceFile": "Screenshot 2026-09-30 at 18.17.08.png",
+    "bytes": 1690862,
+    "similarGroup": null
+  },
+  {
+    "id": 30,
+    "src": "/images/30-plastered-window-reveals.png",
+    "category": "plastering",
+    "alt": "Fresh plaster around a window and entrance door",
+    "sourceFile": "Screenshot 2026-09-30 at 18.17.20.png",
+    "bytes": 1705312,
+    "similarGroup": null
+  },
+  {
+    "id": 31,
+    "src": "/images/31-aaa-logo.png",
+    "category": "brand",
+    "alt": "AAA Development logo",
+    "sourceFile": "Screenshot 2026-09-30 at 18.17.53.png",
+    "bytes": 146546,
+    "similarGroup": null
+  },
+  {
+    "id": 32,
+    "src": "/images/32-rendered-house-complete.png",
+    "category": "rendering",
+    "alt": "Rendered house viewed from the front corner",
+    "sourceFile": "Screenshot 2026-09-30 at 18.18.16.png",
+    "bytes": 1486291,
+    "similarGroup": null
+  },
+  {
+    "id": 33,
+    "src": "/images/33-aaa-customer-photo-two.png",
+    "category": "people",
+    "alt": "AAA team member and customer outdoors",
+    "sourceFile": "Screenshot 2026-09-30 at 18.18.38.png",
+    "bytes": 1792576,
+    "similarGroup": null
+  },
+  {
+    "id": 34,
+    "src": "/images/34-aaa-customer-photo-three.png",
+    "category": "people",
+    "alt": "AAA team member pictured with a customer indoors",
+    "sourceFile": "Screenshot 2026-09-30 at 18.18.44.png",
+    "bytes": 2277679,
+    "similarGroup": null
+  },
+  {
+    "id": 35,
+    "src": "/images/35-roof-hips-and-chimneys.png",
+    "category": "roofing",
+    "alt": "Grey tiled roof hips with chimneys behind",
+    "sourceFile": "Screenshot 2026-09-30 at 18.18.51.png",
+    "bytes": 2185866,
+    "similarGroup": null
+  },
+  {
+    "id": 36,
+    "src": "/images/36-roof-repair-open-tiles.png",
+    "category": "roofing",
+    "alt": "Lifted roof tiles exposing membrane and battens during a repair",
+    "sourceFile": "Screenshot 2026-09-30 at 18.19.12.png",
+    "bytes": 2412098,
+    "similarGroup": null
+  }
+]
