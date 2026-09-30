@@ -147,10 +147,6 @@ export function Footer() {
           <span>Built by AGMM</span>
         </div>
       </footer>
-      <Link href={tel} className="floating-call">
-        <Phone size={20} />
-        Call {phone}
-      </Link>
       <nav className="mobile-contact" aria-label="Quick contact">
         <Link href={tel}>
           <Phone size={18} />
