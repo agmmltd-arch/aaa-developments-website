@@ -70,6 +70,7 @@ export function Header() {
             </div>
           </details>
           <Link href="/areas">Areas</Link>
+          <Link href="/about">About</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/emergency">Emergency</Link>
           <Link href="/contact">Contact</Link>
@@ -218,7 +219,7 @@ export function ReviewSection({
         >
           <ReviewSourceLogo source="Google" />
           <span>
-            <strong>4.6/5</strong> from 65 reviews
+            <strong>4.6 / 5</strong>
           </span>
         </Link>
         <Link
@@ -229,7 +230,7 @@ export function ReviewSection({
         >
           <ReviewSourceLogo source="MyBuilder" />
           <span>
-            <strong>5/5</strong> from 8 reviews
+            <strong>5 / 5</strong>
           </span>
         </Link>
         <Link

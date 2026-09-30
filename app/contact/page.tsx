@@ -1,10 +1,15 @@
 import Link from 'next/link';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { WhatsAppIcon } from '@/components/whatsapp-icon';
-import { Shell, Picture, ContactBand, Stars } from '@/components/site';
+import { Shell, Picture, ContactBand } from '@/components/site';
+import { ReviewSourceLogo } from '@/components/review-carousel';
 import QuoteForm from '@/components/quote-form';
 import { phone, tel, whatsapp, email, google } from '@/lib/site';
-export const metadata = { title: 'Contact Kelvin & request a quote' };
+export const metadata = {
+  title: 'Contact Kelvin & request a quote',
+  description:
+    'Call Kelvin or request a quote for roofing, plastering and rendering work across Padiham and East Lancashire.',
+};
 export default function Contact() {
   return (
     <Shell>
@@ -42,9 +47,8 @@ export default function Contact() {
               target="_blank"
               rel="noreferrer"
             >
-              <Stars rating={4.6} />
+              <ReviewSourceLogo source="Google" />
               <strong>4.6 / 5</strong>
-              <span>65 Google reviews</span>
             </Link>
           </div>
         </div>

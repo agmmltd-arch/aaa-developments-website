@@ -1,4 +1,9 @@
 import assets from './assets.json';
+export const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  'https://aaa-developments-padiham.agmm-ltd.chatgpt.site'
+).replace(/\/$/, '');
+export const siteIsLive = process.env.NEXT_PUBLIC_SITE_LIVE === 'true';
 export const phone = '07568 425666';
 export const tel = 'tel:+447568425666';
 export const whatsapp = 'https://wa.me/447568425666';

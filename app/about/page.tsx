@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { Shell, Picture, ReviewSection, ContactBand } from '@/components/site';
-export const metadata = { title: 'About Kelvin & AAA Developments' };
+export const metadata = {
+  title: 'About Kelvin & AAA Developments',
+  description:
+    'Meet Kelvin and AAA Developments, providing roofing, plastering and rendering services across East Lancashire.',
+};
 export default function About() {
   return (
     <Shell>

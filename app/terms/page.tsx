@@ -1,5 +1,8 @@
 import { Shell } from '@/components/site';
-export const metadata = { title: 'Website information' };
+export const metadata = {
+  title: 'Website information',
+  description: 'Website terms and information for AAA Developments.',
+};
 export default function Terms() {
   return (
     <Shell>

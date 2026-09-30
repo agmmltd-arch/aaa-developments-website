@@ -2,7 +2,6 @@ import Link from 'next/link';
 import {
   Shell,
   Picture,
-  Actions,
   ServiceGrid,
   ReviewSection,
   FAQ,
@@ -10,7 +9,7 @@ import {
 } from '@/components/site';
 import { ReviewSourceLogo } from '@/components/review-carousel';
 import QuoteForm from '@/components/quote-form';
-import { towns, google } from '@/lib/site';
+import { towns, google, mybuilder } from '@/lib/site';
 export default function Home() {
   return (
     <Shell>
@@ -28,8 +27,7 @@ export default function Home() {
               <br />
               <span>Think AAA.</span>
             </h1>
-            <div className="hero-description">
-              <Actions />
+            <div className="hero-rating-links" aria-label="Review profiles">
               <Link
                 href={google}
                 className="hero-review"
@@ -38,7 +36,15 @@ export default function Home() {
               >
                 <ReviewSourceLogo source="Google" />
                 <strong>4.6 / 5</strong>
-                <span>65 reviews ↗</span>
+              </Link>
+              <Link
+                href={mybuilder}
+                className="hero-review"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ReviewSourceLogo source="MyBuilder" />
+                <strong>5 / 5</strong>
               </Link>
             </div>
           </div>

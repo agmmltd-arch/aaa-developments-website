@@ -1,5 +1,8 @@
 import { Shell } from '@/components/site';
-export const metadata = { title: 'Privacy information' };
+export const metadata = {
+  title: 'Privacy information',
+  description: 'How AAA Developments handles website enquiry information.',
+};
 export default function Privacy() {
   return (
     <Shell>

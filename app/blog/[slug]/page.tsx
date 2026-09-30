@@ -10,6 +10,7 @@ export async function generateMetadata({
   const { slug } = await params;
   return {
     title: guides.find((g) => g.slug === slug)?.title || 'Guide not found',
+    description: guides.find((g) => g.slug === slug)?.intro,
   };
 }
 export default async function Guide({
@@ -41,6 +42,27 @@ export default async function Guide({
           </section>
         ))}
       </article>
+      <section className="section guide-next">
+        <div>
+          <span className="eyebrow">Useful next step</span>
+          <h2>Discuss the work with Kelvin.</h2>
+        </div>
+        <div className="guide-next-links">
+          {slug === 'requesting-a-roofing-quote' && (
+            <Link href="/services/roof-repairs">Explore roof repairs →</Link>
+          )}
+          {slug === 'planning-plastering-work' && (
+            <Link href="/services/plastering">Explore plastering →</Link>
+          )}
+          {slug === 'planning-exterior-work' && (
+            <>
+              <Link href="/services/rendering">Explore rendering →</Link>
+              <Link href="/services/jetwashing">Explore jetwashing →</Link>
+            </>
+          )}
+          <Link href="/contact">Request a free quote →</Link>
+        </div>
+      </section>
       <ContactBand />
     </Shell>
   );

@@ -6,7 +6,11 @@ import {
   ContactBand,
   ReviewSection,
 } from '@/components/site';
-export const metadata = { title: 'Urgent roof repairs | Call Kelvin' };
+export const metadata = {
+  title: 'Urgent roof repairs | Call Kelvin',
+  description:
+    'Call Kelvin at AAA Developments about an urgent roof leak in Padiham or nearby East Lancashire towns.',
+};
 export default function Emergency() {
   return (
     <Shell>

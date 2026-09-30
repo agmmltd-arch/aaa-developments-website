@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { ClipboardList } from 'lucide-react';
 import { WhatsAppIcon } from './whatsapp-icon';
-import { ReviewSourceLogo } from './review-carousel';
 import {
   Select,
   SelectContent,
@@ -11,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { services, email, whatsapp, mybuilder } from '@/lib/site';
+import { services, email, whatsapp } from '@/lib/site';
 export default function QuoteForm() {
   const [service, setService] = useState<string | null>(null);
   const [showEmail, setShowEmail] = useState(false);
@@ -128,12 +127,6 @@ export default function QuoteForm() {
             />
           </label>
         )}
-        <div className="quote-review">
-          <Link href={mybuilder} target="_blank" rel="noreferrer">
-            <ReviewSourceLogo source="MyBuilder" />
-            <span>Read our reviews ↗</span>
-          </Link>
-        </div>
         {error && (
           <p role="alert" className="form-error">
             {error}
