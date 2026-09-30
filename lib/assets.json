@@ -322,5 +322,23 @@
     "sourceFile": "Screenshot 2026-09-30 at 18.19.12.png",
     "bytes": 2412098,
     "similarGroup": null
+  },
+  {
+    "id": 37,
+    "src": "/images/37-generated-chimney-repair.png",
+    "category": "roofing",
+    "alt": "Brick chimney with finished stepped lead flashing on a slate roof",
+    "sourceFile": "Generated chimney repair service image",
+    "bytes": 3203943,
+    "similarGroup": null
+  },
+  {
+    "id": 38,
+    "src": "/images/38-generated-guttering.png",
+    "category": "roofline",
+    "alt": "Black guttering and downpipe fitted along a tiled roof edge",
+    "sourceFile": "Generated guttering service image",
+    "bytes": 2406611,
+    "similarGroup": null
   }
 ]

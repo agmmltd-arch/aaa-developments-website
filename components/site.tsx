@@ -108,7 +108,10 @@ export function Actions({ quote = false }: { quote?: boolean }) {
         <Phone size={18} />
         Call {phone}
       </Link>
-      <Link href={quote ? '/contact' : whatsapp} className="button outline">
+      <Link
+        href={quote ? '/contact' : whatsapp}
+        className={quote ? 'button outline' : 'button whatsapp-button'}
+      >
         {quote ? <ClipboardList size={18} /> : <WhatsAppIcon size={18} />}{' '}
         {quote ? 'Get a Free Quote' : 'Message on WhatsApp'}
       </Link>
@@ -122,12 +125,10 @@ export function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/">AAA Developments</Link>
-            <p>Roofing, plastering and rendering across East Lancashire.</p>
             <Link href={tel} className="footer-phone">
               {phone}
             </Link>
             <Link href={'mailto:' + email}>{email}</Link>
-            <span>Padiham, Lancashire</span>
           </div>
           <div>
             <h3>Key services</h3>
@@ -138,20 +139,15 @@ export function Footer() {
             <Link href="/services/rendering">Rendering</Link>
           </div>
           <div>
-            <h3>Useful links</h3>
-            <Link href="/about">About Kelvin</Link>
-            <Link href="/services">All services</Link>
-            <Link href="/areas">All areas</Link>
-            <Link href="/blog">Advice &amp; guides</Link>
-            <Link href="/contact">Contact</Link>
-            <Link href="/emergency">Emergency</Link>
+            <h3>Legal</h3>
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
           </div>
         </div>
         <div className="footer-bottom">
           <span>© {new Date().getFullYear()} AAA Developments</span>
           <div>
-            <Link href="/privacy">Privacy</Link>
-            <Link href="/terms">Terms</Link>
+            <span>Built by AGMM</span>
           </div>
         </div>
       </footer>
@@ -164,7 +160,7 @@ export function Footer() {
           <Phone size={18} />
           <span>Call now</span>
         </Link>
-        <Link href={whatsapp}>
+        <Link href={whatsapp} className="mobile-whatsapp">
           <WhatsAppIcon size={18} />
           <span>WhatsApp</span>
         </Link>

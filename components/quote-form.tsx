@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { ClipboardList } from 'lucide-react';
 import { WhatsAppIcon } from './whatsapp-icon';
-import { Slider } from '@/components/ui/slider';
+import { ReviewSourceLogo } from './review-carousel';
 import {
   Select,
   SelectContent,
@@ -13,7 +13,6 @@ import {
 } from '@/components/ui/select';
 import { services, email, whatsapp, mybuilder } from '@/lib/site';
 export default function QuoteForm() {
-  const [urgency, setUrgency] = useState([3]);
   const [service, setService] = useState<string | null>(null);
   const [showEmail, setShowEmail] = useState(false);
   const [message, setMessage] = useState('');
@@ -31,7 +30,7 @@ export default function QuoteForm() {
       return typeof value === 'string' ? value : '';
     };
     setMessage(
-      `Hello Kelvin, I would like a quote.\nName: ${field('name')}\nPhone: ${field('phone')}\nPostcode: ${field('postcode')}\nService: ${service}\nUrgency: ${urgency[0]} out of 5\nDetails: ${field('notes')}${field('email') ? '\nEmail: ' + field('email') : ''}`,
+      `Hello Kelvin, I would like a quote.\nName: ${field('name')}\nPhone: ${field('phone')}\nPostcode: ${field('postcode')}\nService: ${service}\nDetails: ${field('notes')}${field('email') ? '\nEmail: ' + field('email') : ''}`,
     );
   }
   return (
@@ -62,33 +61,6 @@ export default function QuoteForm() {
               maxLength={25}
             />
           </label>
-        </div>
-        <div className="urgency">
-          <span className="form-label" id="urgency-label">
-            How urgent is it?
-          </span>
-          <Slider
-            aria-labelledby="urgency-label"
-            aria-label="Urgency from 1 to 5"
-            value={urgency}
-            onValueChange={(v) => setUrgency(Array.isArray(v) ? v : [v])}
-            min={1}
-            max={5}
-            step={1}
-          />
-          <div className="urgency-numbers">
-            {[1, 2, 3, 4, 5].map((n) => (
-              <button
-                type="button"
-                key={n}
-                aria-pressed={urgency[0] === n}
-                onClick={() => setUrgency([n])}
-              >
-                {n}
-              </button>
-            ))}
-          </div>
-          <small>1: no rush · 5: urgent</small>
         </div>
         <div className="form-row">
           <label>
@@ -158,7 +130,8 @@ export default function QuoteForm() {
         )}
         <div className="quote-review">
           <Link href={mybuilder} target="_blank" rel="noreferrer">
-            ★★★★★ 5.0 on MyBuilder ↗
+            <ReviewSourceLogo source="MyBuilder" />
+            <span>Read our reviews ↗</span>
           </Link>
         </div>
         {error && (
@@ -183,7 +156,7 @@ export default function QuoteForm() {
             app.
           </p>
           <Link
-            className="button blue"
+            className="button whatsapp-button"
             href={whatsapp + '?text=' + encodeURIComponent(message)}
             target="_blank"
             rel="noreferrer"

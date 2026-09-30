@@ -51,14 +51,14 @@ export const services = [
     slug: 'chimney-repairs',
     name: 'Chimney repairs & leadwork',
     problem: 'Trouble around your chimney?',
-    image: 26,
+    image: 37,
     group: 'Roofing',
   },
   {
     slug: 'guttering',
     name: 'Guttering',
     problem: 'Water running down the outside wall?',
-    image: 12,
+    image: 38,
     group: 'Roofline',
   },
   {
