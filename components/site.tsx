@@ -110,7 +110,7 @@ export function Actions({ quote = false }: { quote?: boolean }) {
       </Link>
       <Link
         href={quote ? '/contact' : whatsapp}
-        className={quote ? 'button outline' : 'button whatsapp-button'}
+        className="button outline whatsapp-button"
       >
         {quote ? <ClipboardList size={18} /> : <WhatsAppIcon size={18} />}{' '}
         {quote ? 'Get a Free Quote' : 'Message on WhatsApp'}
@@ -121,7 +121,7 @@ export function Actions({ quote = false }: { quote?: boolean }) {
 export function Footer() {
   return (
     <>
-      <footer className="site-footer">
+      <footer className="site-footer" id="footer">
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/">AAA Developments</Link>
@@ -138,17 +138,12 @@ export function Footer() {
             <Link href="/services/plastering">Plastering</Link>
             <Link href="/services/rendering">Rendering</Link>
           </div>
-          <div>
-            <h3>Legal</h3>
-            <Link href="/privacy">Privacy</Link>
-            <Link href="/terms">Terms</Link>
-          </div>
         </div>
         <div className="footer-bottom">
+          <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
           <span>© {new Date().getFullYear()} AAA Developments</span>
-          <div>
-            <span>Built by AGMM</span>
-          </div>
+          <span>Built by AGMM</span>
         </div>
       </footer>
       <Link href={tel} className="floating-call">
@@ -206,13 +201,13 @@ export function ReviewSection({
   title?: string;
 }) {
   return (
-    <section className="review-section section">
+    <section className="review-section section" id="reviews">
       <div className="section-heading">
         <div>
           <span className="eyebrow">Read their experiences</span>
           <h2>{title}</h2>
         </div>
-        <p>Independent feedback from three review platforms.</p>
+        <p>Original reviews from verified customer profiles.</p>
       </div>
       <div className="review-scorebar" aria-label="Review profiles">
         <Link

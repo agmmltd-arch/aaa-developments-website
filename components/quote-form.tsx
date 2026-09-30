@@ -156,7 +156,7 @@ export default function QuoteForm() {
             app.
           </p>
           <Link
-            className="button whatsapp-button"
+            className="button outline whatsapp-button"
             href={whatsapp + '?text=' + encodeURIComponent(message)}
             target="_blank"
             rel="noreferrer"
