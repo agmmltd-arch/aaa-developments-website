@@ -49,32 +49,23 @@ export default async function ServicePage({
           <Actions quote />
         </div>
       </section>
-      <div className="service-body section">
-        <aside className="contents-nav">
-          <span className="eyebrow">On this page</span>
+      <section
+        className={
+          'section service-overview ' + (c.gallery.length ? '' : 'text-only')
+        }
+      >
+        {c.gallery.length > 0 && <Picture id={c.gallery[0]} />}
+        <div className="service-detail-grid">
           {c.sections.map((x, i) => (
-            <Link href={'#detail-' + i} key={i}>
-              {String(i + 1).padStart(2, '0')} {x.title}
-            </Link>
-          ))}
-          {c.gallery.length > 0 && (
-            <Link href="#photos">Project photographs</Link>
-          )}
-          <Link href="/contact" className="button blue">
-            Request a quote
-          </Link>
-        </aside>
-        <article className="service-article">
-          {c.sections.map((x, i) => (
-            <section id={'detail-' + i} key={i}>
+            <article id={'detail-' + i} key={x.title}>
               <span className="eyebrow">{String(i + 1).padStart(2, '0')}</span>
               <h2>{x.title}</h2>
               <p>{x.text}</p>
-            </section>
+            </article>
           ))}
-        </article>
-      </div>
-      {c.gallery.length > 0 && (
+        </div>
+      </section>
+      {c.gallery.length > 1 && (
         <section className="section project-section" id="photos">
           <div className="section-heading">
             <div>
@@ -84,7 +75,7 @@ export default async function ServicePage({
             <p>Roofing and property work, photographed up close.</p>
           </div>
           <div className="project-grid">
-            {c.gallery.map((id) => (
+            {c.gallery.slice(1).map((id) => (
               <figure key={id}>
                 <Picture id={id} />
               </figure>

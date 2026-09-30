@@ -319,32 +319,42 @@ export function ReviewSection({
 export function ContactBand() {
   return (
     <section className="contact-band">
+      <Picture id={4} className="contact-band-photo" />
+      <div className="contact-band-shade" />
       <div>
-        <span className="eyebrow">Roofing & property services</span>
+        <span className="eyebrow">Roofing · Plastering · Rendering</span>
         <h2>GET A QUOTE FROM KELVIN.</h2>
-        <p>Call Kelvin to discuss the job, or send a few photos on WhatsApp.</p>
+        <p>Tell Kelvin what needs doing. Call or send photos on WhatsApp.</p>
       </div>
       <Actions />
     </section>
   );
 }
-export function ServiceGrid() {
+export function ServiceGrid({
+  secondaryOnly = false,
+}: {
+  secondaryOnly?: boolean;
+}) {
   return (
     <div className="service-grid">
-      {services.map((s, i) => (
-        <Link
-          className={'service-card ' + (i === 0 ? 'featured' : '')}
-          href={'/services/' + s.slug}
-          key={s.slug}
-        >
-          <Picture id={s.image} />
-          <div>
-            <p>{s.problem}</p>
-            <h3>{s.name}</h3>
-            <ArrowUpRight className="card-arrow" size={24} />
-          </div>
-        </Link>
-      ))}
+      {services
+        .filter(
+          (s) =>
+            !secondaryOnly || !['plastering', 'rendering'].includes(s.slug),
+        )
+        .map((s) => (
+          <Link
+            className="service-card"
+            href={'/services/' + s.slug}
+            key={s.slug}
+          >
+            <Picture id={s.image} />
+            <div>
+              <h3>{s.name}</h3>
+              <ArrowUpRight className="card-arrow" size={24} />
+            </div>
+          </Link>
+        ))}
     </div>
   );
 }

@@ -30,8 +30,8 @@ export default function Home() {
           </h1>
           <div className="hero-description">
             <p>
-              Roof repairs, reroofing and flat roofs from Kelvin and the team.
-              Plastering, rendering and jetwashing too.
+              Roofing, plastering and rendering from Kelvin and the team in
+              Padiham.
             </p>
             <Actions />
             <Link
@@ -44,58 +44,55 @@ export default function Home() {
               <strong>4.6 / 5</strong>
               <span>65 Google reviews ↗</span>
             </Link>
-            <p className="hero-areas">
-              Padiham · Burnley · Accrington · Blackburn · Nelson · Colne
-            </p>
           </div>
         </div>
         <QuoteForm />
       </section>
-      <section className="section process">
+      <section className="section primary-services">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">Roofing projects</span>
-            <h2>On the roof, step by step.</h2>
+            <span className="eyebrow">Inside and outside your home</span>
+            <h2>Roofing. Plastering. Rendering.</h2>
           </div>
-          <p>Repairs, preparation and finished roof details from AAA’s work.</p>
+          <p>Speak to Kelvin about the work you need.</p>
         </div>
-        <div className="process-grid">
+        <div className="primary-service-grid">
           {[
             {
               id: 16,
-              n: '01',
-              title: 'Roof repairs',
-              text: 'Work where pitched tiles meet a flat roof. Junctions and edges need the same attention as the main covering.',
+              title: 'Roofing',
+              text: 'Repairs, flat roofs and full replacements.',
+              href: '/services/roof-repairs',
             },
             {
-              id: 6,
-              n: '02',
-              title: 'Membrane and battens',
-              text: 'A roof during installation, with the membrane and timber battens in place before the tiles go on.',
+              id: 30,
+              title: 'Plastering',
+              text: 'Walls, ceilings and a smooth finish indoors.',
+              href: '/services/plastering',
             },
             {
-              id: 3,
-              n: '03',
-              title: 'Finished tiling',
-              text: 'Grey roof tiles and hip details. See more of the work on our roofing pages.',
+              id: 13,
+              title: 'Rendering',
+              text: 'Exterior finishes, including K-rend.',
+              href: '/services/rendering',
             },
-          ].map((p) => (
-            <article key={p.n}>
-              <Picture id={p.id} />
-              <div className="process-title">
-                <span>{p.n}</span>
-                <h3>{p.title}</h3>
+          ].map((s) => (
+            <Link href={s.href} className="primary-service" key={s.title}>
+              <Picture id={s.id} />
+              <div>
+                <h3>{s.title}</h3>
+                <p>{s.text}</p>
+                <span className="service-discover">View service</span>
               </div>
-              <p>{p.text}</p>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
       <section className="section services-section">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">Roofing and more</span>
-            <h2>What needs doing?</h2>
+            <span className="eyebrow">Repairs, replacements and cleaning</span>
+            <h2>More ways we can help.</h2>
           </div>
           <p>
             Choose the job that sounds like yours.
@@ -103,7 +100,7 @@ export default function Home() {
             Not sure? Call Kelvin and talk it through.
           </p>
         </div>
-        <ServiceGrid />
+        <ServiceGrid secondaryOnly />
         <Link className="text-link" href="/services">
           Explore all services →
         </Link>
@@ -117,20 +114,12 @@ export default function Home() {
             <br />
             THE TEAM.
           </h2>
+          <p>Based in Padiham, working on homes across East Lancashire.</p>
           <p>
-            Kelvin and AAA Developments are based in Padiham, working on homes
-            across the neighbouring towns.
+            Call about roofing, plastering or rendering. Send photos on WhatsApp
+            to help Kelvin understand the job.
           </p>
-          <p>
-            Call about a roof repair, a full reroof or work inside and outside
-            your home. You can send photos on WhatsApp before arranging a visit.
-          </p>
-          <ul>
-            <li>Roofing, from local repairs to full replacements</li>
-            <li>Interior plastering and exterior rendering</li>
-            <li>Guttering, roofline and outdoor cleaning</li>
-            <li>One contact to discuss the work you need</li>
-          </ul>
+
           <Link href="/about" className="text-link">
             More about Kelvin →
           </Link>

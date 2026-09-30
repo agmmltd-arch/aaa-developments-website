@@ -36,7 +36,7 @@ export default function QuoteForm() {
   }
   return (
     <div className="quote-panel" id="quote">
-      <h2>Get a free written quote</h2>
+      <h2>Get a free quote</h2>
       <p>Tell Kelvin what needs doing.</p>
       <form onSubmit={submit}>
         <div className="form-row">
@@ -51,7 +51,7 @@ export default function QuoteForm() {
             />
           </label>
           <label>
-            Phone number
+            Phone
             <input
               autoComplete="tel"
               type="tel"
@@ -88,7 +88,7 @@ export default function QuoteForm() {
               </button>
             ))}
           </div>
-          <small>1 is no rush. 5 is an urgent problem.</small>
+          <small>1: no rush · 5: urgent</small>
         </div>
         <div className="form-row">
           <label>
@@ -103,7 +103,7 @@ export default function QuoteForm() {
           </label>
           <div>
             <label id="service-label" htmlFor="service-choice">
-              Service required
+              Service
             </label>
             <Select
               value={service}
@@ -128,7 +128,7 @@ export default function QuoteForm() {
           </div>
         </div>
         <label>
-          Tell us the problem
+          About the job
           <textarea
             name="notes"
             placeholder="Brief description…"
@@ -142,9 +142,7 @@ export default function QuoteForm() {
           type="button"
           onClick={() => setShowEmail(!showEmail)}
         >
-          {showEmail
-            ? 'Hide optional email'
-            : 'Add an email for a written quote'}
+          {showEmail ? 'Hide optional email' : 'Add email (optional)'}
         </button>
         {showEmail && (
           <label>
@@ -171,11 +169,9 @@ export default function QuoteForm() {
         <button type="submit" className="button blue quote-submit">
           Get a Free Quote <ClipboardList size={18} />
         </button>
-        <small className="form-note">
-          Next, choose WhatsApp or email to send your enquiry.
-        </small>
+        <small className="form-note">Send via WhatsApp or email next.</small>
         <small className="privacy-note">
-          Your details are used to reply.{' '}
+          For replying to your enquiry.{' '}
           <Link href="/privacy">Privacy policy</Link>
         </small>
       </form>

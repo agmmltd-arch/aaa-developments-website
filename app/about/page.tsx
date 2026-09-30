@@ -25,10 +25,8 @@ export default function About() {
             roofing, alongside plastering, rendering, guttering and jetwashing.
           </p>
           <p>
-            Kelvin is the person to contact when you need to discuss a job.
-            Explain what you have noticed, what you would like to change and
-            where the property is. You can send photographs on WhatsApp to help
-            start the conversation.
+            Speak directly to Kelvin about the job. Send your postcode and
+            photographs on WhatsApp to arrange the next step.
           </p>
           <p>
             Based in Padiham, the service area includes Burnley, Accrington,

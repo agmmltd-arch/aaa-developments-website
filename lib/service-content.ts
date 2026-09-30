@@ -16,11 +16,11 @@ export const serviceContent: Record<string, ServiceContent> = {
     sections: [
       {
         title: 'Start with a clear description',
-        text: 'Say where the water is appearing, when it started and whether the problem changes with the weather. A photo taken from the ground or inside the room can help explain it. There is no need to get onto the roof yourself.',
+        text: 'Say where the water is appearing, when it started and whether the problem changes with the weather. A photo taken from the ground or inside the room can help explain it.',
       },
       {
         title: 'An urgent repair still needs the right diagnosis',
-        text: 'A visible drip does not always sit directly below the fault. Tiles, valleys, flashing, flat roof junctions and gutters can all be involved. The repair should follow an inspection of the affected area, rather than an assumption based only on the stain.',
+        text: 'A visible drip does not always sit directly below the fault. Tiles, valleys, flashing, flat roof junctions and gutters can all be involved.',
       },
       {
         title: 'Discuss the immediate job and the lasting repair',
@@ -28,7 +28,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
       {
         title: 'What to have ready when you call',
-        text: 'Your postcode, contact number, type of property and a brief description are a useful starting point. Mention difficult access, conservatories or extensions below the roof. Kelvin can discuss availability and the next step with you directly.',
+        text: 'Your postcode, contact number, type of property and a brief description are a useful starting point. Mention difficult access, conservatories or extensions below the roof.',
       },
     ],
     faq: [
@@ -51,7 +51,7 @@ export const serviceContent: Record<string, ServiceContent> = {
     sections: [
       {
         title: 'Find the cause before choosing the repair',
-        text: 'Explain what you have noticed: a damp patch, water after heavy rain, a loose tile or a problem around a chimney or roof window. The visible symptom is the starting point. The condition of the surrounding covering and junctions helps determine the work needed.',
+        text: 'Explain what you have noticed: a damp patch, water after heavy rain, a loose tile or a problem around a chimney or roof window. The visible symptom is the starting point.',
       },
       {
         title: 'Slates, tiles and the details between them',
@@ -59,11 +59,11 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
       {
         title: 'Repair or replace?',
-        text: 'The age of the roof alone is not enough to decide. The spread of damage, condition of the underlying layers and previous repairs matter too. Ask Kelvin to explain whether the issue is local or part of a wider problem before deciding on a repair or reroof.',
+        text: 'The age of the roof alone is not enough to decide. The spread of damage, condition of the underlying layers and previous repairs matter too.',
       },
       {
         title: 'Arrange a visit',
-        text: 'Send a description, your postcode and any safe photographs. If you have had work on the same area before, mention that too. It helps build a clearer picture of the fault and the access required.',
+        text: 'Send a description, your postcode and any safe photographs. If you have had work on the same area before, mention that too.',
       },
     ],
     faq: [
@@ -86,11 +86,11 @@ export const serviceContent: Record<string, ServiceContent> = {
     sections: [
       {
         title: 'Look at the whole flat roof',
-        text: 'The covering is only part of a flat roof. The supporting deck, edges, drainage and junctions against the building also matter. A problem at an edge or wall connection can need a different approach from widespread deterioration of the surface.',
+        text: 'The covering is only part of a flat roof. The supporting deck, edges, drainage and junctions against the building also matter.',
       },
       {
         title: 'Repairs and replacement coverings',
-        text: 'AAA undertakes flat roofing, including EPDM rubber. Discuss the existing material, the condition of the roof beneath it and the intended use of the space below. Kelvin can explain the proposed system and what preparation is included.',
+        text: 'AAA undertakes flat roofing, including EPDM rubber. Discuss the existing material, the condition of the roof beneath it and the intended use of the space below.',
       },
       {
         title: 'Edges and junctions deserve attention',
@@ -129,11 +129,11 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
       {
         title: 'Choose a finish that suits the property',
-        text: 'Slate and tile roofs come with different appearances and installation requirements. Talk through the available options and the suitability of the existing structure. Where permissions or particular specifications apply to your property, establish those before work begins.',
+        text: 'Slate and tile roofs come with different appearances and installation requirements. Talk through the available options and the suitability of the existing structure.',
       },
       {
         title: 'Plan the work around your home',
-        text: 'Scaffolding, deliveries and waste removal need space. Mention shared access, neighbouring roofs and any extension or conservatory below the work. Ask Kelvin about the likely sequence and how the property will be protected during the job.',
+        text: 'Scaffolding, deliveries and waste removal need space. Mention shared access, neighbouring roofs and any extension or conservatory below the work.',
       },
     ],
     faq: [
@@ -160,11 +160,11 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
       {
         title: 'Pointing, flaunching and chimney work',
-        text: 'AAA’s published services include chimney pointing, flaunching and taking down chimneys. The right scope depends on the condition of the stack and the proposed outcome. Discuss access, the use of the chimney and any connected appliances before work is agreed.',
+        text: 'AAA’s published services include chimney pointing, flaunching and taking down chimneys. The right scope depends on the condition of the stack and the proposed outcome.',
       },
       {
         title: 'Leadwork around the roof',
-        text: 'Leadwork forms part of many weatherproofing junctions, including chimneys and bays. Repair decisions depend on the condition of the existing material and the detail beneath. Kelvin can discuss what needs renewing and how it connects to the surrounding covering.',
+        text: 'Leadwork forms part of many weatherproofing junctions, including chimneys and bays. Repair decisions depend on the condition of the existing material and the detail beneath.',
       },
       {
         title: 'Access is part of the plan',
@@ -191,7 +191,7 @@ export const serviceContent: Record<string, ServiceContent> = {
     sections: [
       {
         title: 'Work out where the water is going',
-        text: 'Tell Kelvin whether the issue happens at a joint, corner, outlet or along a whole length. A blockage, damaged fitting and incorrectly aligned run can produce similar symptoms. Photographs from the ground help show the affected side of the building.',
+        text: 'Tell Kelvin whether the issue happens at a joint, corner, outlet or along a whole length. A blockage, damaged fitting and incorrectly aligned run can produce similar symptoms.',
       },
       {
         title: 'Repairs and cleaning',
@@ -226,11 +226,11 @@ export const serviceContent: Record<string, ServiceContent> = {
     sections: [
       {
         title: 'More than a tidy roof edge',
-        text: 'Fascias and soffits finish the roofline and sit alongside the gutters. Peeling finishes, damaged boards or water staining are worth investigating before simply covering them up. The condition behind the visible surface helps determine the right work.',
+        text: 'Fascias and soffits finish the roofline and sit alongside the gutters. Peeling finishes, damaged boards or water staining are worth investigating before simply covering them up.',
       },
       {
         title: 'Discuss the proposed materials',
-        text: 'AAA installs uPVC fascias and soffits. Talk through the colour, profile, ventilation requirements and the guttering attached to the roof edge. The scope should distinguish replacement from work to existing boards.',
+        text: 'AAA installs uPVC fascias and soffits. Talk through the colour, profile, ventilation requirements and the guttering attached to the roof edge.',
       },
       {
         title: 'Coordinate the roofline and rainwater work',
@@ -261,7 +261,7 @@ export const serviceContent: Record<string, ServiceContent> = {
     sections: [
       {
         title: 'Start with the surface you have',
-        text: 'A sound wall that needs a skim is a different job from loose plaster, exposed masonry or a newly boarded surface. Describe the existing finish and the area you want covered. Photos of the whole wall and the affected details help explain the work.',
+        text: 'A sound wall that needs a skim is a different job from loose plaster, exposed masonry or a newly boarded surface. Describe the existing finish and the area you want covered.',
       },
       {
         title: 'Walls, ceilings and smaller repairs',
@@ -296,11 +296,11 @@ export const serviceContent: Record<string, ServiceContent> = {
     sections: [
       {
         title: 'Prepare the existing wall',
-        text: 'The condition of the surface beneath matters to the finished result. Discuss old coatings, cracking, loose areas and any previous repairs before deciding on the proposed render system. Preparation should be set out clearly in the quote.',
+        text: 'The condition of the surface beneath matters to the finished result. Discuss old coatings, cracking, loose areas and any previous repairs before deciding on the proposed render system.',
       },
       {
         title: 'Choose the finish and system',
-        text: 'AAA carries out rendering, including K-rend. Colour, texture and suitability for the existing wall all affect the choice. Ask Kelvin to explain the proposed materials and the finish you can expect on your property.',
+        text: 'AAA carries out rendering, including K-rend. Colour, texture and suitability for the existing wall all affect the choice.',
       },
       {
         title: 'Corners, openings and roofline details',
@@ -308,7 +308,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       },
       {
         title: 'Plan access and the surrounding work',
-        text: 'Scaffolding and access around the building may be needed. Discuss downpipes, cables, window protection and any fixtures affected by the work. Weather conditions can influence the timing of external finishes, so agree the practical sequence before starting.',
+        text: 'Scaffolding and access around the building may be needed. Discuss downpipes, cables, window protection and any fixtures affected by the work.',
       },
     ],
     faq: [
@@ -328,15 +328,15 @@ export const serviceContent: Record<string, ServiceContent> = {
     sections: [
       {
         title: 'Match the cleaning to the surface',
-        text: 'Tell Kelvin what the area is made from and what needs cleaning. Stone, concrete and block paving can need different handling. The condition of the surface and joints matters when deciding on the method.',
+        text: 'Tell Kelvin what the area is made from and what needs cleaning. Stone, concrete and block paving can need different handling.',
       },
       {
         title: 'Patios, paths and paved areas',
-        text: 'Send a wider photograph showing the area, followed by any close-up detail that helps explain the problem. An approximate size is useful when discussing a quote. The images show jetwashing in action and a paved courtyard.',
+        text: 'Send a wider photograph showing the area, followed by any close-up detail that helps explain the problem. An approximate size is useful when discussing a quote.',
       },
       {
         title: 'Access, water and drainage',
-        text: 'Mention access through the property, any outdoor tap and where water normally drains. Moveable furniture, plant pots and adjoining surfaces should be considered before work starts. Kelvin can confirm what preparation is needed.',
+        text: 'Mention access through the property, any outdoor tap and where water normally drains. Moveable furniture, plant pots and adjoining surfaces should be considered before work starts.',
       },
       {
         title: 'Agree what the clean includes',

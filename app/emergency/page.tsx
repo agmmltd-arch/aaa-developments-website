@@ -27,28 +27,40 @@ export default function Emergency() {
           <Actions />
         </div>
       </section>
-      <section className="section article-content">
-        <h2>What to tell us</h2>
-        <p>
-          Explain where the water is appearing, when it started and whether
-          tiles or other roof parts have moved. Mention the type of property and
-          anything that affects access.
-        </p>
-        <h2>Photographs from a safe position</h2>
-        <p>
-          You can send photos on WhatsApp from the ground or inside the
-          property. Do not climb onto the roof to investigate. If there is
-          immediate danger to people, contact the emergency services.
-        </p>
-        <h2>Agree attendance directly</h2>
-        <p>
-          A visit depends on the location, existing work, weather and safe
-          access. Call rather than waiting for an email reply if your problem is
-          urgent.
-        </p>
-        <Link className="text-link" href="/services/emergency-roof-repairs">
-          More about emergency roof repairs →
-        </Link>
+      <section className="section emergency-help">
+        <Picture id={20} />
+        <div>
+          <span className="eyebrow">When you call</span>
+          <h2>Three useful details.</h2>
+          <div className="practical-grid">
+            <article>
+              <span>01</span>
+              <h3>What’s happening?</h3>
+              <p>Where is the water appearing, and when did it start?</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Where’s the property?</h3>
+              <p>
+                Give your postcode and mention anything that affects access.
+              </p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Can you send photos?</h3>
+              <p>
+                Take them from the ground or indoors. Don’t climb onto the roof.
+              </p>
+            </article>
+          </div>
+          <p className="attendance-note">
+            Attendance depends on availability, weather and safe access. If
+            people are in immediate danger, contact the emergency services.
+          </p>
+          <Link className="text-link" href="/services/emergency-roof-repairs">
+            About emergency repairs
+          </Link>
+        </div>
       </section>
       <ReviewSection ids={['maxine', 'ali', 'charlotte']} />
       <ContactBand />
