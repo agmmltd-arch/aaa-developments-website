@@ -161,6 +161,8 @@ export const reviews: Review[] = [
     name: 'Maxine Garrett',
     date: '19 January 2026',
     topic: 'Roof repairs',
+    source: bark,
+    sourceName: 'Bark',
     quote: 'Clean, tidy, reliable and honest.',
   },
   {
@@ -168,6 +170,8 @@ export const reviews: Review[] = [
     name: 'Nigel Hegarty',
     date: '12 July 2026',
     topic: 'Reroofing',
+    source: bark,
+    sourceName: 'Bark',
     quote: 'work was excellent and fast',
   },
   {
@@ -193,6 +197,8 @@ export const reviews: Review[] = [
     name: 'Caroline Connoll',
     date: '14 July 2025',
     topic: 'Roofing, plastering & rendering',
+    source: bark,
+    sourceName: 'Bark',
     quote: 'very professional',
   },
   {
@@ -200,6 +206,8 @@ export const reviews: Review[] = [
     name: 'Liz Wilson',
     date: '12 November 2025',
     topic: 'Flat roofing',
+    source: bark,
+    sourceName: 'Bark',
     quote: 'Lads did a great job.',
   },
   {
@@ -207,6 +215,8 @@ export const reviews: Review[] = [
     name: 'Barbara Ball',
     date: '11 May 2026',
     topic: 'Leadwork',
+    source: bark,
+    sourceName: 'Bark',
     quote: 'fantastic job',
   },
   {
@@ -214,6 +224,8 @@ export const reviews: Review[] = [
     name: 'Rebecca Johnson',
     date: '21 May 2026',
     topic: 'Customer service',
+    source: bark,
+    sourceName: 'Bark',
     quote: 'great customer service and quality workmanship',
   },
 ];

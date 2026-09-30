@@ -1,6 +1,7 @@
 /* eslint-disable nextjs/no-img-element -- User photographs are served as original static assets. */
 import Link from 'next/link';
 import { WhatsAppIcon } from './whatsapp-icon';
+import { ReviewCarousel, ReviewSourceLogo } from './review-carousel';
 import {
   ArrowUpRight,
   Phone,
@@ -11,11 +12,9 @@ import {
 import {
   photo,
   services,
-  towns,
   phone,
   tel,
   whatsapp,
-  reviews,
   bark,
   email,
   mybuilder,
@@ -123,51 +122,29 @@ export function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/">AAA Developments</Link>
-            <p>
-              Roofing, plastering, rendering and jetwashing. Based in Padiham.
-              Working across nearby Lancashire towns.
-            </p>
-            <Link href={tel}>{phone}</Link>
+            <p>Roofing, plastering and rendering across East Lancashire.</p>
+            <Link href={tel} className="footer-phone">
+              {phone}
+            </Link>
             <Link href={'mailto:' + email}>{email}</Link>
-            <p>
-              54 Ingham Street, Padiham
-              <br />
-              Lancashire BB12 8DR
-            </p>
+            <span>Padiham, Lancashire</span>
           </div>
           <div>
-            <h3>Services</h3>
-            {services.map((s) => (
-              <Link key={s.slug} href={'/services/' + s.slug}>
-                {s.name}
-              </Link>
-            ))}
+            <h3>Key services</h3>
+            <Link href="/services/roof-repairs">Roof repairs</Link>
+            <Link href="/services/new-roofs">New roofs</Link>
+            <Link href="/services/flat-roofing">Flat roofing</Link>
+            <Link href="/services/plastering">Plastering</Link>
+            <Link href="/services/rendering">Rendering</Link>
           </div>
           <div>
-            <h3>Areas</h3>
-            {towns.map((t) => (
-              <Link key={t} href={'/areas/' + t.toLowerCase()}>
-                {t}
-              </Link>
-            ))}
-          </div>
-          <div>
-            <h3>Company</h3>
+            <h3>Useful links</h3>
             <Link href="/about">About Kelvin</Link>
             <Link href="/services">All services</Link>
             <Link href="/areas">All areas</Link>
-            <Link href="/blog">Advice & guides</Link>
+            <Link href="/blog">Advice &amp; guides</Link>
             <Link href="/contact">Contact</Link>
             <Link href="/emergency">Emergency</Link>
-            <Link href={mybuilder} target="_blank" rel="noreferrer">
-              MyBuilder reviews ↗
-            </Link>
-            <Link href={bark} target="_blank" rel="noreferrer">
-              Bark reviews ↗
-            </Link>
-            <Link href={google} target="_blank" rel="noreferrer">
-              Google profile ↗
-            </Link>
           </div>
         </div>
         <div className="footer-bottom">
@@ -175,7 +152,6 @@ export function Footer() {
           <div>
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
-            <span>Built by AGMM</span>
           </div>
         </div>
       </footer>
@@ -240,31 +216,19 @@ export function ReviewSection({
           <span className="eyebrow">Read their experiences</span>
           <h2>{title}</h2>
         </div>
-        <Link
-          href={mybuilder}
-          className="text-link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          More customer reviews <ArrowUpRight size={18} />
-        </Link>
+        <p>Independent feedback from three review platforms.</p>
       </div>
-      <div className="review-scorebar">
+      <div className="review-scorebar" aria-label="Review profiles">
         <Link
           href={google}
           target="_blank"
           rel="noreferrer"
           className="review-score"
         >
-          <strong>
-            4.6<span>/5</span>
-          </strong>
-          <div>
-            <Stars rating={4.6} />
-            <span>
-              65 reviews on <b>Google</b>
-            </span>
-          </div>
+          <ReviewSourceLogo source="Google" />
+          <span>
+            <strong>4.6/5</strong> from 65 reviews
+          </span>
         </Link>
         <Link
           href={mybuilder}
@@ -272,47 +236,22 @@ export function ReviewSection({
           rel="noreferrer"
           className="review-score"
         >
-          <strong>
-            5.0<span>/5</span>
-          </strong>
-          <div>
-            <Stars />
-            <span>
-              8 reviews on <b>MyBuilder</b>
-            </span>
-          </div>
+          <ReviewSourceLogo source="MyBuilder" />
+          <span>
+            <strong>5/5</strong> from 8 reviews
+          </span>
         </Link>
-        <div className="review-platforms">
-          <Link href={bark} target="_blank" rel="noreferrer">
-            More reviews on Bark ↗
-          </Link>
-        </div>
+        <Link
+          href={bark}
+          target="_blank"
+          rel="noreferrer"
+          className="review-score"
+        >
+          <ReviewSourceLogo source="Bark" />
+          <span>Read reviews on Bark</span>
+        </Link>
       </div>
-      <div className="review-grid">
-        {ids.map((id) => {
-          const r = reviews.find((x) => x.id === id)!;
-          return (
-            <article key={id} className="review">
-              <div className="review-person">
-                <div>
-                  <strong>{r.name}</strong>
-                </div>
-                <span className="source-tag">
-                  {r.sourceName || 'Google via Bark'}
-                </span>
-              </div>
-              {(r.sourceName === 'MyBuilder' || r.sourceName === 'Google') && (
-                <Stars />
-              )}
-              <span className="review-topic">{r.topic}</span>
-              <p>“{r.quote}”</p>
-              <Link href={r.source || bark} target="_blank" rel="noreferrer">
-                Read full review on {r.sourceName || 'Bark'}
-              </Link>
-            </article>
-          );
-        })}
-      </div>
+      <ReviewCarousel ids={ids} />
     </section>
   );
 }
@@ -361,11 +300,11 @@ export function ServiceGrid({
 export function FAQ({ items }: { items: { q: string; a: string }[] }) {
   return (
     <section className="section faq-section">
-      <div>
+      <div className="faq-heading">
         <span className="eyebrow">Before you book</span>
-        <h2>Questions we get asked</h2>
+        <h2>FAQs</h2>
       </div>
-      <div>
+      <div className="faq-grid">
         {items.map((i) => (
           <details key={i.q} className="faq">
             <summary>

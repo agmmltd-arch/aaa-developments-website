@@ -15,12 +15,13 @@ export default function Home() {
   return (
     <Shell>
       <section className="home-hero">
-        <Picture id={4} className="hero-photo" priority />
+        <Picture id={35} className="hero-photo" priority />
         <div className="hero-shade" />
         <div className="hero-content">
           <span className="hero-location">
             AAA Developments, Padiham, Lancashire
           </span>
+          <span className="experience-badge">Over 25 years on the tools</span>
           <h1>
             ROOFING &amp;
             <br />
@@ -126,7 +127,7 @@ export default function Home() {
         </div>
       </section>
       <ReviewSection
-        ids={['ali', 'lucy', 'carl', 'emma', 'charlotte', 'jim']}
+        ids={['ali', 'maxine', 'jamie', 'lucy', 'caroline', 'phoenix']}
       />
       <section className="section area-strip">
         <span className="eyebrow">Based in Padiham</span>
@@ -143,20 +144,36 @@ export default function Home() {
       <FAQ
         items={[
           {
-            q: 'Which areas do you cover?',
-            a: 'AAA Developments works in Padiham, Burnley, Accrington, Blackburn, Nelson and Colne. Call with your postcode to discuss access and availability.',
-          },
-          {
-            q: 'Can I send photos of the problem?',
-            a: 'Yes. Send photos on WhatsApp with your postcode and a short description. Take photographs only from a safe position; there is no need to climb onto the roof.',
-          },
-          {
-            q: 'Do you do more than roofing?',
-            a: 'Yes. You can also enquire about plastering, rendering, guttering, fascias, soffits and jetwashing.',
+            q: 'How do I know whether my roof needs repairing or replacing?',
+            a: 'A localised leak, slipped tiles or damaged flashing may only need a repair. Widespread damage, repeated leaks or an ageing roof may make replacement the better option. Kelvin can inspect the roof and explain what is needed.',
           },
           {
             q: 'Can you help with an urgent roof leak?',
-            a: 'Call Kelvin directly to explain what is happening. Attendance depends on the location, current work and safe access. A specific arrival time should be agreed on the call.',
+            a: 'Call Kelvin directly and explain where the water is entering. Attendance depends on location, current work and safe access, so agree the timing on the call.',
+          },
+          {
+            q: 'Do you repair flat roofs?',
+            a: 'Yes. AAA Developments handles flat roof repairs and replacement work. The first step is to check the surface, edges, outlets and the point where the flat roof meets the main building.',
+          },
+          {
+            q: 'Can you repair guttering, fascias and soffits?',
+            a: 'Yes. Ask about leaking or damaged guttering, worn fascias and soffits, and roofline work alongside a roof repair or replacement.',
+          },
+          {
+            q: 'Do you plaster full rooms as well as small repairs?',
+            a: 'Yes. You can enquire about full rooms, ceilings, damaged areas and making good after other work. Send room photos and approximate sizes when requesting a quote.',
+          },
+          {
+            q: 'What rendering work do you take on?',
+            a: 'AAA Developments works on exterior rendering and K-rend finishes. Kelvin can assess the existing surface, access and preparation before quoting.',
+          },
+          {
+            q: 'Can I send photos before arranging a visit?',
+            a: 'Yes. Send clear photos on WhatsApp with your postcode and a short description. Photograph roof problems only from a safe position. There is no need to climb onto the roof.',
+          },
+          {
+            q: 'Which areas do you cover?',
+            a: 'AAA Developments works in Padiham, Burnley, Accrington, Blackburn, Nelson and Colne. Call with your postcode to check availability.',
           },
         ]}
       />

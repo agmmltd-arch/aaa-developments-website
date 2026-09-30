@@ -100,6 +100,250 @@ p {
   margin-bottom: 24px;
   padding: 20px 0;
 }
+.experience-badge {
+  display: inline-flex;
+  align-self: flex-start;
+  margin-top: 12px;
+  padding: 7px 10px;
+  border: 1px solid #ffffff5c;
+  background: #071c3073;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.home-hero > .hero-photo {
+  object-position: 55% 48%;
+}
+.review-section {
+  overflow: hidden;
+}
+.review-scorebar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+}
+.review-score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
+  padding: 4px 26px;
+  border-right: 1px solid #dbe3eb;
+}
+.review-score:first-child {
+  padding-left: 0;
+}
+.review-score:last-child {
+  border-right: 0;
+}
+.review-score > span:last-child {
+  color: #5b6c79;
+  font-size: 13px;
+}
+.review-score > span:last-child strong {
+  color: #102d50;
+}
+.review-source-logo {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  white-space: nowrap;
+  line-height: 1;
+}
+.google-logo {
+  font-size: 23px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.055em;
+}
+.google-logo b:nth-child(1),
+.google-logo b:nth-child(4) {
+  color: #4285f4;
+}
+.google-logo b:nth-child(2),
+.google-logo b:nth-child(6) {
+  color: #ea4335;
+}
+.google-logo b:nth-child(3) {
+  color: #fbbc05;
+}
+.google-logo b:nth-child(5) {
+  color: #34a853;
+}
+.mybuilder-logo {
+  color: #253c55;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+}
+.mybuilder-logo::before {
+  content: '';
+  width: 8px;
+  height: 22px;
+  margin-right: 7px;
+  background: #f36f21;
+  transform: skew(-14deg);
+}
+.bark-logo {
+  color: #5926a8;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+}
+.review-carousel-viewport {
+  overflow: hidden;
+}
+.review-carousel-track {
+  display: flex;
+  margin-left: -22px;
+  touch-action: pan-y pinch-zoom;
+}
+.review-slide {
+  flex: 0 0 33.333%;
+  min-width: 0;
+  padding-left: 22px;
+}
+.review-slide .review {
+  min-height: 330px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.review-card-head,
+.review-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.carousel-stars {
+  display: inline-flex;
+  gap: 2px;
+  color: #e6a725;
+  flex-shrink: 0;
+}
+.review-slide .review > p {
+  flex: 1;
+  min-height: 0;
+  margin: 10px 0 24px;
+}
+.review-card-foot {
+  align-items: end;
+  padding-top: 18px;
+  border-top: 1px solid #e1e7ec;
+}
+.review-card-foot strong {
+  font-size: 14px;
+  color: #102d50;
+}
+.review-card-foot a {
+  font-size: 12px;
+  color: #3a6687;
+  text-align: right;
+}
+.review-carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+  color: #6a7884;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.review-carousel-controls > div {
+  display: flex;
+  gap: 8px;
+}
+.review-carousel-controls button {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #bfcbd5;
+  background: #fff;
+  color: #173b5c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+.review-carousel-controls button:hover {
+  background: #173b5c;
+  color: #fff;
+}
+.review-carousel-controls button:active {
+  transform: translateY(1px);
+}
+.review-carousel-controls button:focus-visible {
+  outline: 3px solid #8dc5ea;
+  outline-offset: 2px;
+}
+.faq-section {
+  display: block;
+}
+.faq-heading {
+  margin-bottom: 30px;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 42px;
+  border-top: 1px solid #c7d2dc;
+}
+.faq {
+  padding: 22px 0;
+}
+.faq:first-child {
+  padding-top: 22px;
+}
+.faq summary {
+  cursor: pointer;
+}
+.faq summary span {
+  transition: transform 180ms ease;
+}
+.site-footer {
+  padding: 48px 5% 24px;
+}
+.footer-grid {
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.8fr) minmax(0, 0.8fr);
+  gap: clamp(38px, 7vw, 110px);
+  max-width: 1280px;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-brand p {
+  max-width: 34ch;
+  margin: 12px 0 16px;
+}
+.footer-brand > span {
+  margin-top: 10px;
+  color: #8099ad;
+  font-size: 12px;
+}
+.footer-brand .footer-phone {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 3px;
+}
+.footer-grid h3 {
+  margin-bottom: 14px;
+}
+.footer-grid a {
+  padding: 4px 0;
+}
+.footer-bottom {
+  margin-top: 34px;
+  padding-top: 18px;
+}
 .contact-band {
   position: relative;
   isolation: isolate;
@@ -398,6 +642,13 @@ p {
     line-height: 1.4;
     padding: 0;
     background: none;
+  }
+  .experience-badge {
+    margin-top: 7px;
+    padding: 4px 6px;
+    font-size: 9px;
+    line-height: 1.25;
+    letter-spacing: 0;
   }
   .hero-content h1,
   .contact-hero .hero-content h1 {
@@ -713,35 +964,85 @@ p {
   .review-scorebar {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 12px;
+    gap: 0;
     align-items: center;
     padding: 17px 0;
     margin-bottom: 18px;
   }
   .review-score {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     min-width: 0;
+    padding: 3px 8px;
+    border-right: 1px solid #dbe3eb;
   }
-  .review-score > strong {
-    display: block;
-    font-size: 32px;
-    margin-bottom: 7px;
+  .review-score:first-child {
+    padding-left: 0;
   }
-  .review-score > strong > span {
+  .review-score:last-child {
+    border-right: 0;
+  }
+  .review-score > span:last-child {
+    font-size: 10px;
+    line-height: 1.35;
+  }
+  .review-source-logo {
+    min-height: 21px;
+  }
+  .google-logo {
+    font-size: 17px;
+  }
+  .mybuilder-logo {
     font-size: 14px;
   }
-  .review-score > div > span:not(.review-stars) {
-    font-size: 11px;
-    line-height: 1.4;
+  .mybuilder-logo::before {
+    width: 5px;
+    height: 16px;
+    margin-right: 4px;
   }
-  .review-platforms {
+  .bark-logo {
+    font-size: 18px;
+  }
+  .review-carousel-track {
+    margin-left: -10px;
+  }
+  .review-slide {
+    flex-basis: 82%;
+    padding-left: 10px;
+  }
+  .review-slide .review {
+    min-height: 255px;
+    padding: 18px;
+  }
+  .review-card-head {
+    gap: 9px;
+  }
+  .carousel-stars svg {
+    width: 13px;
+    height: 13px;
+  }
+  .review-slide .review > p {
+    font-size: 16px;
+    margin: 9px 0 18px;
+  }
+  .review-card-foot {
+    align-items: end;
+    gap: 8px;
+    padding-top: 14px;
+  }
+  .review-card-foot strong {
     font-size: 12px;
-    line-height: 1.4;
   }
-  .review-section .section-heading > .text-link {
-    max-width: 32%;
-    margin: 0;
-    font-size: 11px;
+  .review-card-foot a {
+    font-size: 10px;
+  }
+  .review-carousel-controls {
+    margin-top: 14px;
+  }
+  .review-carousel-controls button {
+    width: 36px;
+    height: 36px;
   }
   .town-links {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -754,8 +1055,14 @@ p {
     gap: 4px;
   }
   .faq-section {
-    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
-    gap: 20px;
+    display: block;
+  }
+  .faq-heading {
+    margin-bottom: 18px;
+  }
+  .faq-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 14px;
   }
   .faq {
     padding: 14px 0;
@@ -817,8 +1124,8 @@ p {
     padding: 30px 12px 95px;
   }
   .footer-grid {
-    grid-template-columns: 1.2fr 1fr 0.8fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1.25fr 0.9fr 0.9fr;
+    gap: 15px;
   }
   .footer-brand {
     grid-column: auto;
@@ -838,7 +1145,15 @@ p {
     font-size: 15px;
   }
   .footer-brand p {
-    margin: 12px 0;
+    margin: 9px 0 12px;
+  }
+  .footer-brand .footer-phone {
+    font-size: 15px;
+  }
+  .footer-brand > span {
+    font-size: 10px;
+    line-height: 1.4;
+    margin-top: 8px;
   }
   .footer-bottom {
     font-size: 11px;
