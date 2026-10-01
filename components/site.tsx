@@ -215,7 +215,7 @@ export function ReviewSection({
         >
           <ReviewSourceLogo source="Google" />
           <span>
-            <strong>4.6 / 5</strong>
+            <strong>4.6 Stars</strong>
           </span>
         </Link>
         <Link
@@ -226,7 +226,7 @@ export function ReviewSection({
         >
           <ReviewSourceLogo source="MyBuilder" />
           <span>
-            <strong>5 / 5</strong>
+            <strong>5 Stars</strong>
           </span>
         </Link>
         <Link

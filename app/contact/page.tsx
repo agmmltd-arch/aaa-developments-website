@@ -48,7 +48,7 @@ export default function Contact() {
               rel="noreferrer"
             >
               <ReviewSourceLogo source="Google" />
-              <strong>4.6 / 5</strong>
+              <strong>4.6 Stars</strong>
             </Link>
           </div>
         </div>

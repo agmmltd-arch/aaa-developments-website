@@ -35,7 +35,7 @@ export default function Home() {
                 rel="noreferrer"
               >
                 <ReviewSourceLogo source="Google" />
-                <strong>4.6 / 5</strong>
+                <strong>4.6 Stars</strong>
               </Link>
               <Link
                 href={mybuilder}
@@ -44,7 +44,7 @@ export default function Home() {
                 rel="noreferrer"
               >
                 <ReviewSourceLogo source="MyBuilder" />
-                <strong>5 / 5</strong>
+                <strong>5 Stars</strong>
               </Link>
             </div>
           </div>
@@ -103,11 +103,7 @@ export default function Home() {
           <Picture id={25} />
           <div>
             <span className="eyebrow">Meet AAA Developments</span>
-            <h2>
-              KELVIN &amp;
-              <br />
-              THE TEAM.
-            </h2>
+            <h2>MEET THE FACE BEHIND AAA DEVELOPMENTS.</h2>
             <p>Over 25 years on the tools, working across East Lancashire.</p>
 
             <Link href="/about" className="text-link">
