@@ -2,6 +2,9 @@
 
 Production website for AAA Developments, covering roofing, plastering and rendering services across Padiham and East Lancashire.
 
+- Live site: <https://aaa-developments-padiham.agmm-ltd.workers.dev>
+- Full continuation and domain instructions: [HANDOVER.md](HANDOVER.md)
+
 ## Requirements
 
 - Node.js 22.13 or newer

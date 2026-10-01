@@ -1,7 +1,7 @@
 import assets from './assets.json';
 export const siteUrl = (
   process.env.NEXT_PUBLIC_SITE_URL ||
-  'https://aaa-developments-padiham.agmm-ltd.chatgpt.site'
+  'https://aaa-developments-padiham.agmm-ltd.workers.dev'
 ).replace(/\/$/, '');
 export const siteIsLive = process.env.NEXT_PUBLIC_SITE_LIVE === 'true';
 export const phone = '07568 425666';
