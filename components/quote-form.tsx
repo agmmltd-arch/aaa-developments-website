@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Link from '@/components/link';
 import { useState } from 'react';
 import { ClipboardList } from 'lucide-react';
 import { WhatsAppIcon } from './whatsapp-icon';

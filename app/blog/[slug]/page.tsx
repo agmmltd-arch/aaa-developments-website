@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/link';
 import { notFound } from 'next/navigation';
 import { Shell, Picture, ContactBand } from '@/components/site';
 import { guides } from '@/lib/guides';

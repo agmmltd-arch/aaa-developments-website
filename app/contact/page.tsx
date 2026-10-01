@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/link';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { WhatsAppIcon } from '@/components/whatsapp-icon';
 import { Shell, Picture, ContactBand } from '@/components/site';

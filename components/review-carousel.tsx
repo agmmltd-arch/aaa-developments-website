@@ -1,5 +1,5 @@
 /* eslint-disable nextjs/no-img-element -- Original review screenshots and supplied platform mark are served unchanged. */
-import Link from 'next/link';
+import Link from '@/components/link';
 import { google, mybuilder } from '@/lib/site';
 
 type ReviewSource = 'Google' | 'MyBuilder' | 'Bark';

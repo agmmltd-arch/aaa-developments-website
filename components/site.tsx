@@ -1,5 +1,5 @@
 /* eslint-disable nextjs/no-img-element -- User photographs are served as original static assets. */
-import Link from 'next/link';
+import Link from '@/components/link';
 import { WhatsAppIcon } from './whatsapp-icon';
 import { ReviewCarousel, ReviewSourceLogo } from './review-carousel';
 import {

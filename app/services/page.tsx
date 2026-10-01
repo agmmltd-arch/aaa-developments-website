@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/link';
 import { Shell, Picture, ServiceGrid, ContactBand } from '@/components/site';
 export const metadata = {
   title: 'Our services',
