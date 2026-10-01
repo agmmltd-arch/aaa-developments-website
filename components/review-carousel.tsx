@@ -36,7 +36,18 @@ export function ReviewSourceLogo({ source }: { source: ReviewSource }) {
         className="review-source-logo mybuilder-logo"
         aria-label="MyBuilder"
       >
-        <img src="/reviews/mybuilder-logo.png" alt="" aria-hidden="true" />
+        <img
+          src="/reviews/mybuilder-logo-transparent.png"
+          className="mybuilder-logo-light"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          src="/reviews/mybuilder-logo-transparent-dark.png"
+          className="mybuilder-logo-dark"
+          alt=""
+          aria-hidden="true"
+        />
       </span>
     );
   }
