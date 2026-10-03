@@ -37,4 +37,4 @@ npx wrangler login
 npm run deploy
 ```
 
-The deployment uses the worker name `aaa-developments-padiham`. A custom domain can be attached from the Cloudflare dashboard when ready.
+The deployment uses the Worker name `aaa-developments-padiham` and updates the root domain, `www` hostname and permanent Workers.dev backup together.

@@ -9,7 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
-    "deploy": "npm run build && wrangler deploy --config dist/server/wrangler.json --name aaa-developments-padiham",
+    "deploy": "npm run build && node scripts/prepare-worker-config.mjs && wrangler deploy --config dist/server/wrangler.json --name aaa-developments-padiham --domain aaadevelopment.co.uk --domain www.aaadevelopment.co.uk",
     "lint": "oxlint",
     "format": "oxfmt"
   },

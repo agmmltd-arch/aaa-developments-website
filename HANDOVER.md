@@ -65,36 +65,29 @@ Deploy the current source to the existing Worker:
 npm run deploy
 ```
 
-The command builds the site and deploys it to `aaa-developments-padiham.agmm-ltd.workers.dev`.
+The command builds the site, keeps the permanent Worker backup available, and deploys the update to:
 
-## Connect the finished domain
+- `https://aaadevelopment.co.uk`
+- `https://www.aaadevelopment.co.uk`
+- `https://aaa-developments-padiham.agmm-ltd.workers.dev`
 
-The domain must be present in the same Cloudflare account as the Worker.
+## Domain and DNS
 
-1. Open the Cloudflare dashboard.
-2. Go to **Workers & Pages**.
-3. Open **aaa-developments-padiham**.
-4. Open **Settings**, then **Domains & Routes**.
-5. Select **Add**, then **Custom Domain**.
-6. Enter the final hostname, such as `www.example.co.uk`, and complete the Cloudflare prompts.
-7. Choose one canonical hostname. Redirect the other version, such as the bare domain, to it using a Cloudflare Redirect Rule.
-8. Rebuild and deploy with the real canonical address and search indexing enabled:
+The production domain is connected to the Worker in the same Cloudflare account. The canonical hostname is the bare domain, `https://aaadevelopment.co.uk`.
 
-```bash
-NEXT_PUBLIC_SITE_URL=https://www.example.co.uk NEXT_PUBLIC_SITE_LIVE=true npm run deploy
-```
+- Registrar: GoDaddy
+- Cloudflare zone ID: `0a743cad0205e9c8a4ea872bee20b078`
+- Cloudflare nameservers: `ali.ns.cloudflare.com` and `mcgrory.ns.cloudflare.com`
+- Worker custom domains: `aaadevelopment.co.uk` and `www.aaadevelopment.co.uk`
+- Search indexing: enabled
 
-Replace `https://www.example.co.uk` with the actual canonical domain. Do not include a trailing slash.
-
-9. Check these addresses after deployment:
+The imported Cloudflare zone preserves the existing Zoho MX, SPF, verification and DKIM records. Check these addresses after each deployment:
 
 ```text
-https://www.example.co.uk/
-https://www.example.co.uk/robots.txt
-https://www.example.co.uk/sitemap.xml
+https://aaadevelopment.co.uk/
+https://aaadevelopment.co.uk/robots.txt
+https://aaadevelopment.co.uk/sitemap.xml
 ```
-
-The temporary Worker deployment deliberately remains excluded from search engines. `NEXT_PUBLIC_SITE_LIVE=true` enables indexing when the final domain is ready.
 
 ## Site structure
 
@@ -116,14 +109,11 @@ The temporary Worker deployment deliberately remains excluded from search engine
 
 Confirm these details with the business owner before the final domain launch.
 
-## Final domain launch checklist
+## Post-launch checklist
 
-- Confirm the final domain and preferred `www` or bare-domain format.
 - Confirm the telephone number, email and postal address.
 - Confirm every service and coverage area remains accurate.
 - Test the quote form, telephone links and WhatsApp links on a real phone.
 - Confirm the Google, MyBuilder and Bark profile links.
 - Check the privacy and terms pages.
-- Deploy with `NEXT_PUBLIC_SITE_URL` set to the real domain.
-- Deploy with `NEXT_PUBLIC_SITE_LIVE=true` only when the site is ready for search engines.
 - Submit `/sitemap.xml` in Google Search Console after launch.
