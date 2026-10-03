@@ -2,15 +2,19 @@ import Link from '@/components/link';
 import { notFound } from 'next/navigation';
 import { Shell, Picture, ContactBand } from '@/components/site';
 import { guides } from '@/lib/guides';
+import { services, siteUrl, photo } from '@/lib/site';
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const guide = guides.find(g => g.slug === slug);
   return {
-    title: guides.find((g) => g.slug === slug)?.title || 'Guide not found',
-    description: guides.find((g) => g.slug === slug)?.intro,
+    title: guide?.seoTitle || guide?.title || 'Guide not found',
+    description: guide?.intro,
+    openGraph: {type:'article',title:guide?.title,description:guide?.intro,url:`/blog/${slug}`,images:guide ? [{url:photo(guide.image).src,alt:photo(guide.image).alt}] : []},
+    alternates: {canonical: `/blog/${slug}`},
   };
 }
 export default async function Guide({
@@ -48,21 +52,12 @@ export default async function Guide({
           <h2>Discuss the work with Kelvin.</h2>
         </div>
         <div className="guide-next-links">
-          {slug === 'requesting-a-roofing-quote' && (
-            <Link href="/services/roof-repairs">Explore roof repairs →</Link>
-          )}
-          {slug === 'planning-plastering-work' && (
-            <Link href="/services/plastering">Explore plastering →</Link>
-          )}
-          {slug === 'planning-exterior-work' && (
-            <>
-              <Link href="/services/rendering">Explore rendering →</Link>
-              <Link href="/services/jetwashing">Explore jetwashing →</Link>
-            </>
-          )}
+          {g.service && <Link href={'/services/' + g.service}>{services.find(s => s.slug === g.service)?.name} →</Link>}
+          {guides.filter(next => next.slug !== g.slug && next.service === g.service).slice(0, 1).map(next => <Link key={next.slug} href={'/blog/' + next.slug}>{next.title} →</Link>)}
           <Link href="/contact">Request a free quote →</Link>
         </div>
       </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({'@context':'https://schema.org','@type':'Article',headline:g.title,description:g.intro,image:siteUrl+photo(g.image).src,mainEntityOfPage:siteUrl+'/blog/'+g.slug,publisher:{'@id':siteUrl+'/#business'}})}}/>
       <ContactBand />
     </Shell>
   );

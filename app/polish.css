@@ -2137,3 +2137,76 @@ body {
     padding: 11px 0;
   }
 }
+
+/* Compact service pages: service details, booking, photographs and next steps. */
+.service-hero { min-height: 480px; }
+.service-hero .inner-hero-text { max-width: 760px; }
+.service-hero h1 { font-size: clamp(48px, 5.5vw, 78px); }
+.service-hero p { max-width: 55ch; }
+.service-essential { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: clamp(28px, 6vw, 90px); align-items: start; padding-block: 60px; }
+.service-essential h2, .service-next h2 { font-size: clamp(28px, 3vw, 42px); margin: 0 0 22px; }
+.service-includes { list-style: none; padding: 0; margin: 0 0 20px; display: grid; gap: 14px; }
+.service-includes li { display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+.service-includes svg { flex-shrink: 0; color: var(--blue); margin-top: 3px; }
+.service-scope { border-block: 1px solid #d6e0e6; margin-bottom: 20px; }
+.service-scope summary { cursor: pointer; display: flex; justify-content: space-between; gap: 12px; font-weight: 600; padding: 16px 0; list-style: none; }
+.service-scope summary::-webkit-details-marker { display: none; }
+.service-scope[open] summary span { transform: rotate(45deg); }
+.service-scope p { line-height: 1.65; padding: 0 0 18px; margin: 0; }
+.service-booking { background: var(--pale); padding: clamp(24px, 3vw, 40px); border-radius: 8px; }
+.service-booking h2 { margin: 10px 0 16px; }
+.service-booking p { line-height: 1.6; margin-bottom: 22px; }
+.service-booking .button { width: 100%; }
+.service-call { display: flex; justify-content: center; align-items: center; gap: 8px; padding-top: 18px; font-weight: 600; }
+.service-photos { padding-top: 0; padding-bottom: 45px; }
+.service-photo-grid { display: grid; grid-auto-columns: minmax(0, 1fr); grid-auto-flow: column; gap: 16px; }
+.service-photo-grid img { width: 100%; height: clamp(220px, 26vw, 360px); object-fit: cover; border-radius: 6px; }
+.service-next { padding-block: 45px 65px; border-top: 1px solid #d6e0e6; }
+.service-next-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 20px; }
+.service-next-grid > a { position: relative; padding: 24px 50px 24px 24px; background: var(--pale); border-radius: 6px; transition: background 150ms; }
+.service-next-grid > a:hover { background: #e1edf5; }
+.service-next-grid h3 { font-size: 23px; margin: 10px 0 0; }
+.service-next-grid svg { position: absolute; right: 20px; top: 24px; }
+.enquiry-details { text-align: center; }
+.enquiry-details > div > svg { margin-inline: auto; }
+.cookie-notice { position: fixed; bottom: 20px; left: 20px; z-index: 100; max-width: 360px; background: #fff; color: var(--ink); border: 1px solid #d6e0e6; border-radius: 8px; padding: 14px 42px 14px 16px; box-shadow: 0 5px 25px #0002; font-size: 13px; line-height: 1.5; }
+.cookie-notice a { text-decoration: underline; }
+.cookie-notice button { position: absolute; top: 10px; right: 10px; padding: 4px; background: transparent; color: inherit; cursor: pointer; }
+@media (max-width: 700px) {
+ .service-hero { min-height: 350px; padding-top: 32px; padding-bottom: 30px; }
+ .service-hero h1 { font-size: clamp(40px, 11vw, 58px); margin-block: 14px; }
+ .service-hero p { font-size: 15px; line-height: 1.55; margin-bottom: 20px; }
+ .service-hero .button { min-height: 46px; font-size: 14px; }
+ .service-essential { grid-template-columns: 1fr; gap: 28px; padding-block: 36px; }
+ .service-essential h2, .service-next h2 { font-size: 30px; margin-bottom: 18px; }
+ .service-includes { gap: 12px; font-size: 15px; }
+ .service-scope summary, .service-scope p { font-size: 15px; }
+ .service-essential .text-link { font-size: 14px; }
+ .service-booking { padding: 22px; }
+ .service-booking p { font-size: 15px; margin-bottom: 18px; }
+ .service-booking .button { min-height: 46px; font-size: 14px; }
+ .service-call { font-size: 15px; }
+ .service-photo-grid { gap: 10px; grid-auto-flow: unset; grid-template-columns: repeat(2, minmax(0,1fr)); }
+ .service-photo-grid img { height: 160px; }
+ .service-photo-grid img:only-child { grid-column: 1 / -1; height: 220px; }
+ .service-photo-grid img:nth-child(3) { grid-column: 1/-1; height: 200px; }
+ .service-photos { padding-bottom: 30px; }
+ .service-next { padding-block: 30px 40px; }
+ .service-next-grid { gap: 12px; }
+ .service-next-grid > a { padding: 18px 14px; }
+ .service-next-grid .eyebrow { font-size: 10px; }
+ .service-next-grid h3 { font-size: 21px; line-height: 1.2; margin-top: 12px; }
+ .service-next-grid svg { position: static; margin-top: 14px; }
+ .enquiry-details { gap: 12px; }
+ .enquiry-details h2 { font-size: 20px; }
+ .cookie-notice { left: 12px; right: 12px; bottom: 78px; max-width: none; font-size: 12px; }
+ .article-content { padding-block: 36px; }
+ .article-content h2 { font-size: 28px; }
+ .article-content p { font-size: 16px; line-height: 1.7; }
+ .guide-grid { gap: 20px 14px; }
+ .guide-card h2 { font-size: 23px; }
+ .guide-card p { font-size: 14px; line-height: 1.5; }
+}
+.form-honeypot { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.form-success { color: #165e36; font-size: 14px; line-height: 1.5; padding: 12px; background: #e9f5ed; border-radius: 4px; }
+.quote-submit:disabled { opacity: .65; cursor: wait; }

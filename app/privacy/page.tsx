@@ -13,9 +13,11 @@ export default function Privacy() {
       <section className="section article-content">
         <h2>Your enquiry</h2>
         <p>
-          The enquiry form prepares a message using the details you enter. You
-          choose whether to send it through your own email app or WhatsApp. Your
-          form entries are not submitted to a website enquiry database.
+          The form sends your name, telephone number, postcode, job details and
+          optional email address to AAA Developments at info@aaadevelopment.co.uk
+          and its website support team at agmm.ltd@gmail.com. FormSubmit processes
+          the form to deliver those emails. Please only include information needed
+          to discuss your job.
         </p>
         <h2>Contacting AAA</h2>
         <p>
@@ -28,8 +30,13 @@ export default function Privacy() {
         <p>
           Links to WhatsApp, Google, Bark and MyBuilder open services with their
           own privacy policies. Those services receive information when you
-          choose to use them.
+          choose to use them. FormSubmit’s privacy information is available at
+          <a href="https://formsubmit.co/privacy.pdf" target="_blank" rel="noreferrer">FormSubmit’s privacy policy</a>.
         </p>
+        <h2>Your information</h2>
+        <p>Your enquiry is used to respond, arrange a visit and discuss or quote for the requested work. Ask AAA about access, correction or deletion of information you have shared. Enquiries should only be retained for as long as needed for the work and applicable record-keeping obligations.</p>
+        <h2>Cookies</h2>
+        <p>There are no advertising or analytics cookies. The hosting service may use essential security cookies. Dismissing the cookie information notice is remembered for the current browser session; scrolling dismisses the notice, not a consent request.</p>
         <h2>Website hosting</h2>
         <p>
           The hosting service may process technical connection information

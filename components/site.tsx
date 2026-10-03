@@ -33,7 +33,9 @@ export function Picture({
   const p = photo(id);
   return (
     <img
-      src={p.src}
+      src={`/images/optimized/${id}-1400.webp`}
+      srcSet={`/images/optimized/${id}-640.webp 640w, /images/optimized/${id}-1400.webp 1400w`}
+      sizes={priority ? "100vw" : "(max-width: 700px) 90vw, 50vw"}
       alt={p.alt}
       className={className}
       loading={priority ? 'eager' : 'lazy'}
@@ -204,7 +206,7 @@ export function ReviewSection({
           <span className="eyebrow">Read their experiences</span>
           <h2>{title}</h2>
         </div>
-        <p>Original reviews from verified customer profiles.</p>
+        <p>Read the original customer reviews.</p>
       </div>
       <div className="review-scorebar" aria-label="Review profiles">
         <Link

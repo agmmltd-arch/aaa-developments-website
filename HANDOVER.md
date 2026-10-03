@@ -73,7 +73,7 @@ The command builds the site, keeps the permanent Worker backup available, and de
 
 ## Domain and DNS
 
-The production domain is connected to the Worker in the same Cloudflare account. The canonical hostname is the bare domain, `https://aaadevelopment.co.uk`.
+The Worker has routes and custom-domain bindings for both production hostnames in the same Cloudflare account. The canonical hostname is `https://aaadevelopment.co.uk`. As of the final check on 3 October 2026, the main domain still serves the previous Lovable site, while the Worker backup serves this repository correctly. Do not treat the custom-domain bindings alone as proof of a completed launch. The old provider connection must be resolved and the public domain checked again before sitemap submission.
 
 - Registrar: GoDaddy
 - Cloudflare zone ID: `0a743cad0205e9c8a4ea872bee20b078`
@@ -117,3 +117,22 @@ Confirm these details with the business owner before the final domain launch.
 - Confirm the Google, MyBuilder and Bark profile links.
 - Check the privacy and terms pages.
 - Submit `/sitemap.xml` in Google Search Console after launch.
+
+## October 2026 update
+
+- All ten service pages use a compact service summary, expandable details, booking CTA, photos and links to a related service and guide.
+- The advice library contains 13 articles, including ten new articles: three roofing, three plastering, three rendering and one guttering.
+- Local fonts now use their actual 400/500/600/700 weights rather than a Black font being labelled as variable.
+- Photos have responsive WebP versions in `public/images/optimized/`; supplied originals are retained.
+- Both quote forms share `components/quote-form.tsx` and submit to `app/api/enquiry/route.ts`. The route uses the activated FormSubmit endpoint for `agmm.ltd@gmail.com`, with `info@aaadevelopment.co.uk` fixed as the copy recipient. Both inboxes received the activation test, confirmed by the user.
+- Form protections: same-origin requests, field validation and length limits, hidden spam field, limited requests per Worker isolate, provider abuse filtering, no customer details in application logs, error feedback and WhatsApp/email fallback. The per-isolate limiter is best effort; a dedicated edge rate-limit rule can be added if spam increases.
+- Tracking remains disabled at the user's request. The cookie information notice dismisses on the first scroll and remembers dismissal for the browser session. It does not grant cookie consent or enable analytics.
+- The site supplies canonical URLs, crawlable robots/sitemap, service/article structured data, CSP, frame blocking, content-type protection, referrer policy and permissions policy. `www` redirects permanently to the bare hostname.
+- Vinext is updated to 1.0.1. `fflate` is overridden to 0.8.3, fixing its known malformed-archive advisory. The Shadcn generator is a development dependency. The dependency audit still flags the build-time braces/micromatch/fast-glob chain (six production dependency entries, all inherited from the same braces advisory); no patched braces release is currently available. No public endpoint accepts glob patterns, and these tools are not included in the deployed Worker bundle. Do not downgrade the framework or run forced audit fixes to suppress the report.
+
+## Latest publication checks — 3 October 2026
+
+- Current Worker release: `bb17264b-0a4b-4f71-b461-66dd401d3b38`. The permanent Worker address serves the new service pages.
+- Lint, TypeScript and production build passed. The local crawl checked 38 pages, canonical URLs, titles, descriptions, internal links and images with no failures. All ten service pages fit a 390px mobile viewport without horizontal overflow.
+- Search Console verification TXT is present. Ownership verification and sitemap submission are still pending confirmation and the domain cutover.
+- The imported `_lovable` and `_lovable.www` website verification records are still present; their removal is awaiting confirmation. Email records must be preserved. If removing the old verification records does not release the hostname, disconnect the domain from the previous Lovable project or ask the previous provider to remove its custom-hostname binding.

@@ -1,3 +1,4 @@
+import CookieNotice from '@/components/cookie-notice';
 import type { Metadata } from 'next';
 import './globals.css';
 import './polish.css';
@@ -89,6 +90,7 @@ export default function RootLayout({
     <html lang="en-GB">
       <body>
         {children}
+        <CookieNotice />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}

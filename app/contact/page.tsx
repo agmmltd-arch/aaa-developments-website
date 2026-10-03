@@ -34,7 +34,7 @@ export default function Contact() {
               </Link>
               <Link href={whatsapp}>
                 <WhatsAppIcon />
-                <span>WhatsApp Kelvin</span>
+                <span>Message on WhatsApp</span>
               </Link>
               <Link href={'mailto:' + email}>
                 <Mail size={18} />
@@ -58,25 +58,14 @@ export default function Contact() {
         <div>
           <MapPin />
           <h2>Based in Padiham</h2>
-          <p>
-            54 Ingham Street, Padiham, BB12 8DR. Property visits by arrangement.
-          </p>
         </div>
         <div>
           <Phone />
           <h2>Something urgent?</h2>
-          <p>
-            Call directly about a roof leak. Kelvin will discuss access and
-            availability.
-          </p>
         </div>
         <div>
           <WhatsAppIcon size={24} />
-          <h2>Useful to send</h2>
-          <p>
-            Your postcode, a short description and photos taken from a safe
-            position.
-          </p>
+          <h2>Message on WhatsApp</h2>
         </div>
       </section>
       <ContactBand />

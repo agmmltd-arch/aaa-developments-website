@@ -35,28 +35,9 @@ export default function Emergency() {
         <Picture id={20} />
         <div>
           <span className="eyebrow">When you call</span>
-          <h2>Three useful details.</h2>
-          <div className="practical-grid">
-            <article>
-              <span>01</span>
-              <h3>What’s happening?</h3>
-              <p>Where is the water appearing, and when did it start?</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>Where’s the property?</h3>
-              <p>
-                Give your postcode and mention anything that affects access.
-              </p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>Can you send photos?</h3>
-              <p>
-                Take them from the ground or indoors. Don’t climb onto the roof.
-              </p>
-            </article>
-          </div>
+          <h2>Tell Kelvin what’s happening.</h2>
+          <p>Explain where the water is appearing and when it started. Give your postcode and mention anything that affects access.</p>
+          <p>Photos from indoors or ground level help. Do not climb onto the roof to take them.</p>
           <p className="attendance-note">
             Attendance depends on availability, weather and safe access. If
             people are in immediate danger, contact the emergency services.
