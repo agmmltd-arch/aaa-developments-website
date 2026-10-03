@@ -78,7 +78,7 @@ The production domain is connected to the Worker in the same Cloudflare account.
 - Registrar: GoDaddy
 - Cloudflare zone ID: `0a743cad0205e9c8a4ea872bee20b078`
 - Cloudflare nameservers: `ali.ns.cloudflare.com` and `mcgrory.ns.cloudflare.com`
-- Worker custom domains: `aaadevelopment.co.uk` and `www.aaadevelopment.co.uk`
+- Worker routes: `aaadevelopment.co.uk/*` and `www.aaadevelopment.co.uk/*`
 - Search indexing: enabled
 
 The imported Cloudflare zone preserves the existing Zoho MX, SPF, verification and DKIM records. Check these addresses after each deployment:
