@@ -134,5 +134,5 @@ Confirm these details with the business owner before the final domain launch.
 
 - Current Worker release: `bb17264b-0a4b-4f71-b461-66dd401d3b38`. The permanent Worker address serves the new service pages.
 - Lint, TypeScript and production build passed. The local crawl checked 38 pages, canonical URLs, titles, descriptions, internal links and images with no failures. All ten service pages fit a 390px mobile viewport without horizontal overflow.
-- Search Console verification TXT is present. Ownership verification and sitemap submission are still pending confirmation and the domain cutover.
+- Search Console verification TXT is present. Google automatically verified ownership when the existing domain property was reopened. Sitemap submission remains pending the domain cutover and confirmation.
 - The imported `_lovable` and `_lovable.www` website verification records are still present; their removal is awaiting confirmation. Email records must be preserved. If removing the old verification records does not release the hostname, disconnect the domain from the previous Lovable project or ask the previous provider to remove its custom-hostname binding.
