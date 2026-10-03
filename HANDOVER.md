@@ -73,7 +73,9 @@ The command builds the site, keeps the permanent Worker backup available, and de
 
 ## Domain and DNS
 
-The Worker has routes and custom-domain bindings for both production hostnames in the same Cloudflare account. The canonical hostname is `https://aaadevelopment.co.uk`. As of the final check on 3 October 2026, the main domain still serves the previous Lovable site, while the Worker backup serves this repository correctly. Do not treat the custom-domain bindings alone as proof of a completed launch. The old provider connection must be resolved and the public domain checked again before sitemap submission.
+The new site is live on both production hostnames, verified on 3 October 2026. The canonical hostname is `https://aaadevelopment.co.uk`; www permanently redirects to it. The old Lovable site was overridden directly without needing access to its project.
+
+Cloudflare DNS uses ordinary **proxied A records** for `@` and `www`, both pointing to `192.0.2.1`. This is a placeholder origin: the Worker routes below handle every request before it reaches an origin. Keep both records proxied (orange cloud) and retain both routes. There are no managed Worker custom-domain bindings; do not replace this working route setup with those bindings.
 
 - Registrar: GoDaddy
 - Cloudflare zone ID: `0a743cad0205e9c8a4ea872bee20b078`
@@ -98,6 +100,7 @@ https://aaadevelopment.co.uk/sitemap.xml
 - `public/images/` contains project photographs.
 - `public/reviews/` contains the supplied review screenshots and review-source graphics.
 - `vite.config.ts` defines the Cloudflare Worker build.
+- `worker.ts` applies security headers to final Worker responses, including server-rendered pages.
 - `package.json` contains the development, checking and deployment commands.
 
 ## Important business details
@@ -132,13 +135,8 @@ Confirm these details with the business owner before the final domain launch.
 
 ## Latest publication checks — 3 October 2026
 
-- Current Worker release: `bb17264b-0a4b-4f71-b461-66dd401d3b38`. The permanent Worker address serves the new service pages.
-- Lint, TypeScript and production build passed. The local crawl checked 38 pages, canonical URLs, titles, descriptions, internal links and images with no failures. All ten service pages fit a 390px mobile viewport without horizontal overflow.
-- Search Console verification TXT is present. Google automatically verified ownership when the existing domain property was reopened. Sitemap submission remains pending the domain cutover and confirmation.
-- The imported `_lovable` and `_lovable.www` website verification records were removed with user approval on 3 October 2026. Authoritative DNS confirms both are absent. Zoho MX, SPF, verification and the unrelated email records were preserved. If removing the old verification records does not release the hostname, disconnect the domain from the previous Lovable project or ask the previous provider to remove its custom-hostname binding.
-
-## Domain cutover follow-up — 3 October 2026
-
-The two old Lovable website TXT records have been removed. Both apex and www Worker bindings were reapplied successfully. Cloudflare authoritative DNS and public resolvers now return the new nameservers, but the public apex still returns the previous Lovable homepage. This points to an old SaaS custom-hostname connection taking precedence; changing the DNS verification TXT records alone did not release it. Access to the old Lovable project or its owner is required to disconnect `aaadevelopment.co.uk` and `www.aaadevelopment.co.uk` in Project → Settings → Domains. Do not delete any email connections or the project itself. After that, verify the new homepage, service pages, www redirect, robots and sitemap on the production domain before submitting the sitemap.
-
-References: https://developers.cloudflare.com/ssl/reference/certificate-and-hostname-priority/#hostname-priority and https://docs.lovable.dev/features/custom-domain
+- Current Worker release: `a8ba0684-12cd-4739-babe-7956c45ae547`. The production domain and permanent Worker address serve the new website.
+- Lint, TypeScript and production build passed. All ten service pages fit a 390px mobile viewport without horizontal overflow. The live crawl checked 38 pages for titles, descriptions, canonical URLs, internal links and image references, with no failures; four unknown URLs returned 404.
+- Production HTTPS responses include CSP, HSTS, frame blocking, content-type protection, referrer policy and permissions policy. The www redirect preserves paths.
+- Search Console ownership is verified in the AGMM Google account. Search Console already lists `https://aaadevelopment.co.uk/sitemap.xml` as a successfully submitted sitemap (last read 26 September 2026, 29 pages at that time). The same URL now serves the new 38-page sitemap. Google has not yet processed the new version; registration is already in place and indexing timing is controlled by Google.
+- The old `_lovable` and `_lovable.www` website verification records were removed with user approval. Old Worker custom-domain bindings were removed and replaced with proxied A records and Worker routes. The imported Zoho MX, SPF, verification, DKIM and unrelated email records were preserved.

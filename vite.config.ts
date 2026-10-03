@@ -7,7 +7,7 @@ const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === 'seatbelt';
 
 const localBindingConfig = {
   name: 'aaa-developments-padiham',
-  main: 'vinext/server/fetch-handler',
+  main: './worker.ts',
   compatibility_flags: ['nodejs_compat'],
 };
 
